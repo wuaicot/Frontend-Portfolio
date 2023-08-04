@@ -19,7 +19,7 @@ const Contact = () => {
     e.preventDefault();
     try {
         
-        await axios.post('http://localhost:5000/api/contact', formData);
+        await axios.post(process.env.REACT_APP_BACKEND_URL + 'api/contact', formData);
         setShowSuccessMessage(true);
       setFormData({ name: '', email: '', message: '' });
     } catch (error) {
