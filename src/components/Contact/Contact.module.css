@@ -1,0 +1,56 @@
+/* Contact.module.css */
+
+/* Estilos para el contenedor del formulario */
+.container {
+    max-width: 400px;
+    margin: 12px auto;
+    padding: 40px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  /* Estilos para las etiquetas del formulario */
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  /* Estilos para los campos de entrada del formulario */
+  input,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #404082;
+    border-radius: 4px;
+  }
+  
+  /* Estilos para el botón de enviar */
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Estilos para el mensaje de éxito */
+  .success-message {
+    margin-top: 10px;
+    animation: changeColor 1s infinite; /* Aplicamos la animación "changeColor" durante 3 segundos en bucle infinito */
+  }
+  
+  @keyframes changeColor {
+    0% {
+      color: red; /* Primer color: rojo */
+    }
+    50% {
+      color: green; /* Segundo color: verde */
+    }
+    100% {
+      color: blue; /* Tercer color: azul */
+    }
+  }
+  
+  

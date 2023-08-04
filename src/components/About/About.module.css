@@ -1,0 +1,100 @@
+.conGener{
+  background-color: #ebe9e5;
+  
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: justify;
+    background-color: #ebe9e5;
+    
+  }
+  
+  .aboutTittle {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .puedesllam {
+    font-size: 24px;
+    font-weight: bold;
+    color: #555;
+    text-align: center;
+  }
+  .descriptionCent{
+    text-align: center;
+  }
+  
+  .description {
+    font-size: 18px;
+    color: #777;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    
+  }
+  
+  .aboutcenter {
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    width: 50%;
+  }
+  
+  .aboutme {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .btndowload {
+   
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    
+    
+  }
+  
+  .btndowload:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Additional styles for a more stylized appearance */
+  .sectionTitle {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  
+  /* .skillItem {
+    margin: 10px 0;
+    background-color: aqua;
+  }
+  
+  .skillItem span {
+    font-weight: bold;
+    color: #007bff;
+  } */
+
+  .CVCV{
+    background-color: #282c34;
+    border-radius: 20%;
+  }
+
+  .stackCV{
+    text-align: center;
+    min-width: 15px;
+  }
+  
+ 
+  
