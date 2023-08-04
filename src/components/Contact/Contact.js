@@ -19,8 +19,8 @@ const Contact = () => {
     e.preventDefault();
     try {
          //pro deployd
-        await axios.post(process.env.REACT_APP_BACKEND_URL + 'contact', formData);
-        setShowSuccessMessage(true);
+         await axios.post(process.env.REACT_APP_BACKEND_URL, formData);
+         setShowSuccessMessage(true);
       setFormData({ name: '', email: '', message: '' });
     } catch (error) {
       console.error('Error sending message:', error);
