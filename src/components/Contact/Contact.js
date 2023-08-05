@@ -19,7 +19,7 @@ const Contact = () => {
     e.preventDefault();
     try {
          //pro deployd
-         await axios.post(process.env.REACT_APP_BACKEND_URL + '/contact', formData);
+         await axios.post(process.env.REACT_APP_BACKEND_URL, formData);
          setShowSuccessMessage(true);
       setFormData({ name: '', email: '', message: '' });
     } catch (error) {
@@ -43,6 +43,7 @@ const Contact = () => {
             required
           />
         </div>
+        
         <div>
           <label htmlFor="email">Su correo:</label>
           <input
@@ -54,7 +55,8 @@ const Contact = () => {
             required
           />
         </div>
-        <div>
+
+        <div>        
           <label htmlFor="message">Mensaje:</label>
           <textarea
             id="message"
@@ -66,7 +68,7 @@ const Contact = () => {
         </div>
         <button type="submit">Enviar</button>
       </form>
-      {showSuccessMessage && <div className={styles['success-message']}>Su mensaje fue enviado! Pronto me pondré en contacto. Gracias</div>} 
+      {showSuccessMessage && <div className={styles['success-message']}>Gracias. Su mensaje fue enviado! Pronto me pondré en contacto. </div>} 
     </div>
   );
 };
