@@ -19,12 +19,12 @@ const Contact = () => {
     e.preventDefault();
     try {
          //pro deployd
-         await axios.post(process.env.REACT_APP_BACKEND_URL, formData);
+         await axios.post(process.env.REACT_APP_BACKEND_URL + 'contact', formData);
          setShowSuccessMessage(true);
       setFormData({ name: '', email: '', message: '' });
     } catch (error) {
       console.error('Error sending message:', error);
-      alert('Error sending message. Please try again later.');
+      alert('Disculpe! en este momento no es posible el envío del mensaje, intente contactarme directamente a mi correo electronico. Gracias');
     }
   };
 
