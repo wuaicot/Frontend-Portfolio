@@ -53,4 +53,15 @@
     }
   }
   
+  .Ninja{
+    margin-top: 4px;
+    background-color: #282c34;
+    display: flex;
+    align-content:flex-end;
+    padding: 5px;
+    max-width: 2px;
+    min-height: 128px;
+    
+
+  }
   

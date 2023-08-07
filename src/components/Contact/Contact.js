@@ -1,17 +1,17 @@
-import React, { useState } from 'react';
-import axios from 'axios';
-import styles from './Contact.module.css'; 
+import React, { useState } from "react";
+import axios from "axios";
+import styles from "./Contact.module.css";
+
+
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
+    name: "",
+    email: "",
+    message: "",
   });
 
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
-  
-
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -20,58 +20,92 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-       //await axios.post('http://localhost:5000/externed/contact', formData);  
-      await axios.post('https://backendportfolio-6aea0ff05588.herokuapp.com/', formData);
+      //await axios.post('http://localhost:5000/externed/contact', formData);
+      await axios.post(
+        "https://backendportfolio-6aea0ff05588.herokuapp.com/",
+        formData
+      );
       setShowSuccessMessage(true);
-      setFormData({ name: '', email: '', message: '' });
+      setFormData({ name: "", email: "", message: "" });
     } catch (error) {
-      console.error('Error sending message:', error);
-      alert('Disculpe! en este momento no es posible el envío del mensaje, intente contactarme directamente a mi correo electronico. Gracias');
+      console.error("Error sending message:", error);
+      alert(
+        "Disculpe! en este momento no es posible el envío del mensaje, intente contactarme directamente a mi correo electronico. Gracias"
+      );
     }
   };
-  
 
   return (
-    <div className={styles.container}> 
-      <h2>Contactame</h2>
+    <div className={styles.container}>
+      <h4>
+        Estoy listo para iniciar un nuevo proyecto y ayudarte a llevar a cabo tu
+        idea.
+      </h4>
+
+      <h3>Contactame</h3>
+
       <form onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="name">Su Nombre y Apellido:</label>
+          <label htmlFor="name">Tu Nombre y Apellido:</label>
           <input
             type="text"
             id="name"
             name="name"
             value={formData.name}
             onChange={handleChange}
+            placeholder="Escribe aqui."
             required
           />
         </div>
-        
+
         <div>
-          <label htmlFor="email">Su correo:</label>
+          <label htmlFor="email">Tu correo:</label>
           <input
             type="email"
             id="email"
             name="email"
             value={formData.email}
             onChange={handleChange}
+            placeholder="A este correo electronico te contactaré"
             required
           />
         </div>
 
-        <div>        
+        <div>
           <label htmlFor="message">Mensaje:</label>
           <textarea
             id="message"
             name="message"
             value={formData.message}
             onChange={handleChange}
+            placeholder="Cuentame aquí!"
             required
-          ></textarea>
-        </div>
+            >
+
+            </textarea>  
+            </div>          
+        
+            
+
         <button type="submit">Enviar</button>
+        
       </form>
-      {showSuccessMessage && <div className={styles['success-message']}>Gracias. Su mensaje fue enviado! Pronto me pondré en contacto. </div>} 
+      {showSuccessMessage && (
+        <div className={styles["success-message"]}>
+          Gracias. Su mensaje fue enviado! Pronto me pondré en contacto.{" "}
+        </div>
+      )}
+
+          <div className={styles.Ninja}>
+      <img       
+        src="https://gravatar.com/avatar/539879c51f50898247766a89ba00efea?s=96&amp;d=https://www.herokucdn.com/images/ninja-avatar-96x96.png"
+        alt="wuaicot8@gmail.com"
+        role="presentation"
+        >
+        </img>         
+
+        </div>        
+
     </div>
   );
 };

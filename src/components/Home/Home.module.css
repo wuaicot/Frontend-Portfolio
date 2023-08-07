@@ -7,3 +7,16 @@ img{
     width: 75px;
     height: 75px;
 }
+
+
+  
+  .Hcontainer > * {
+    margin-right: 17px; 
+    
+  } 
+
+  .seccion{
+    display: block;
+    margin-top: -40px;
+    
+  }

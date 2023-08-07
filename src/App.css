@@ -25,8 +25,9 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  
   z-index: 100; /* Ajusta el valor de z-index según tus necesidades */
+  border-radius: 13px 13px 0px 0px;
 }
 
 
@@ -44,11 +45,12 @@
 .Nav {
   margin-top: 10vh; /* Ajusta el valor según la altura del elemento .App-header */
   background-color: #282c34;
-  display: flex;
+  display: inline-block;
+  gap: 20px;
   align-content: center;
   justify-content: space-around;
   padding: 10px;
-  
+  border-radius: 0px 0px 4px 4px;
 }
 
 .Nav ul {

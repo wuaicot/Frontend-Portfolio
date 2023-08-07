@@ -33,7 +33,7 @@ function App() {
             </li>
             <li className="Nav li">
               <NavLink to="/about" className="Nav-link">
-                Acerca de
+                Sobre mí
               </NavLink>
             </li>
             <li className="Nav li">
