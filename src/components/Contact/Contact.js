@@ -96,7 +96,7 @@ const Contact = () => {
         </div>
       )}
 
-          <div className={styles.Ninja}>
+          {/* <div className={styles.Ninja}>
       <img       
         src="https://gravatar.com/avatar/539879c51f50898247766a89ba00efea?s=96&amp;d=https://www.herokucdn.com/images/ninja-avatar-96x96.png"
         alt="wuaicot8@gmail.com"
@@ -104,7 +104,7 @@ const Contact = () => {
         >
         </img>         
 
-        </div>        
+        </div>         */}
 
     </div>
   );
