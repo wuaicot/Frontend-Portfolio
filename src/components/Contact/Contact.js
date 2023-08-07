@@ -20,8 +20,8 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-         
-      await axios.post('http://localhost:5000/externed/contact', formData);
+       //await axios.post('http://localhost:5000/externed/contact', formData);  
+      await axios.post('https://backendportfolio-6aea0ff05588.herokuapp.com/', formData);
       setShowSuccessMessage(true);
       setFormData({ name: '', email: '', message: '' });
     } catch (error) {
