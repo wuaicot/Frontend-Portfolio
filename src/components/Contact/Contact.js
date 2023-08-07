@@ -10,6 +10,8 @@ const Contact = () => {
   });
 
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+  
+
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -18,15 +20,16 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-         //process.env.REACT_APP_BACKEND_URL
-         await axios.post('http://localhost:3000/contact', formData);
-         setShowSuccessMessage(true);
+         
+      await axios.post('http://localhost:5000/externed/contact', formData);
+      setShowSuccessMessage(true);
       setFormData({ name: '', email: '', message: '' });
     } catch (error) {
       console.error('Error sending message:', error);
       alert('Disculpe! en este momento no es posible el envío del mensaje, intente contactarme directamente a mi correo electronico. Gracias');
     }
   };
+  
 
   return (
     <div className={styles.container}> 
