@@ -5,9 +5,9 @@ import styles from './ProjectsCards.module.css';
 const projects = [
   {
     id: 1,
-    title: 'Proyecto 1',
-    description: 'Descripción del proyecto 1',
-    deployedUrl: 'https://proyecto1.com',
+    title: 'The Literary Corner',
+    description: 'Una "e-comerce" en la que el usuario, amante de los libros y de la literatura podrán elegir entre cientos de libros con la posibilidad de visualizar el detalle, añadir a favoritos, hacer reseñas, agregar al carro de compas, comprar libros y más',
+    deployedUrl: 'https://pf-henry-bookstore.vercel.app/',
   },
   {
     id: 2,
