@@ -31,7 +31,7 @@ const Home = () => {
 
         {/* <img class="glostick__account-details__avatar" src="https://gravatar.com/avatar/539879c51f50898247766a89ba00efea?s=96&amp;d=https://www.herokucdn.com/images/ninja-avatar-96x96.png" alt="wuaicot8@gmail.com" role="presentation"></img> */}
 
-        <h1 id={styles.titleHome}> Naycol Rodolfo Linares Villasmil</h1>
+        <h1 id={styles.titleHome}> Naycol Rodolfo Linares V.</h1>
         <hr />
         <h3>
           <span>Full Stack Web Developer</span>
