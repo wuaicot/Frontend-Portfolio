@@ -4,7 +4,7 @@ import logoGithub from "../../image/github (3).png";
 import logoLinkedin from "../../image/linkedin.png";
 import logoTwitter from "../../image/twitter.png";
 import HeroSocial from "../HeroSocial/HeroSocial";
-import HeroButton from "../HeroButton/HeroButton";
+// import HeroButton from "../HeroButton/HeroButton";
  import gmailStiker from "../../image/gmail.png";
  
 
@@ -72,19 +72,19 @@ const Home = () => {
                   linkName="wuaicot8@gmail.com"
                 />
       </div>
-      <div className={styles.heroButtRoutes}>
+      {/* <div className={styles.heroButtRoutes}>
         <HeroButton
           path="/contact"
           
-          text="¿Quieres contactarme?"
+          text="Contactame"
         />
         <br />
         <HeroButton
           path="/projects"
           
-          text="¿quieres ver algunos de mis proyectos?"
+          text="proyectos"
         />
-      </div>
+      </div> */}
     </section>
   );
 };
