@@ -11,7 +11,7 @@ import HeroSocial from "../HeroSocial/HeroSocial";
 const gihubLink = "https://github.com/wuaicot";
 const linkedinLink = "https://www.linkedin.com/in/wuaicot/";
 const twitterLink = "https://twitter.com/naiycol";
-const email = "https://www.gmail.com"
+const email = "https://mail.google.com"
    
 const Home = () => {
   const handleScrollToTop = () => {
