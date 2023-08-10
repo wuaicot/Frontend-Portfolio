@@ -12,7 +12,7 @@ const gihubLink = "https://github.com/wuaicot";
 const linkedinLink = "https://www.linkedin.com/in/wuaicot/";
 const twitterLink = "https://twitter.com/naiycol";
 const email = "https://mail.google.com/mail/wuaicot8@gmail.com"
-
+   
 const Home = () => {
   const handleScrollToTop = () => {
     window.scrollTo({
@@ -67,9 +67,7 @@ const Home = () => {
                   src={gmailStiker}
                   alt="gmail-Stiker"
                   title="wuaicot8@gmail.com"
-                  header="Email"
                   
-                  linkName="wuaicot8@gmail.com"
                 />
       </div>
       {/* <div className={styles.heroButtRoutes}>
