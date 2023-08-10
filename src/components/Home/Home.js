@@ -11,7 +11,7 @@ import HeroSocial from "../HeroSocial/HeroSocial";
 const gihubLink = "https://github.com/wuaicot";
 const linkedinLink = "https://www.linkedin.com/in/wuaicot/";
 const twitterLink = "https://twitter.com/naiycol";
-const email = "https://mail.google.com"
+const email = "https://mail.google.com/mail/wuaicot8@gmail.com"
    
 const Home = () => {
   const handleScrollToTop = () => {
@@ -64,9 +64,11 @@ const Home = () => {
 
                 <HeroSocial
                   href={email}
+                  target="_blank"
                   src={gmailStiker}
                   alt="gmail-Stiker"
                   title="wuaicot8@gmail.com"
+                  linkName="wuaicot8@gmail.com"
                   
                 />
       </div>
