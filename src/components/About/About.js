@@ -80,14 +80,12 @@ const About = () => {
               <hr/>
                 <div className={styles.CVCV}>
                   <div className={styles.stackCV}>
-                  <a className={styles.btndowload}
-                  href={CV}
-                  download="Naycol_R.Linares_cv"
-                >
-                  Puedes descargar mi CV aquí.
-                </a>
-
-
+                    <a className={styles.btndowload}
+                     href={CV}
+                     download="Naycol_R.Linares_cv"
+                    >
+                   descargar mi CV aquí.
+                    </a>
                   </div>
                 </div>
         </div>

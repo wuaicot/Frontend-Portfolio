@@ -1,26 +1,59 @@
 .container {
-  max-width: 800px;
-  margin-top: -180px;
+  max-width: 100%;
   padding: 12px;
   text-align: center;
+  background-color: #ebe9e5;
+}
+
+.adverting {
+  font-size: 24px;
+  font-weight: bold;
+  animation:  shakeAnimation 0.050s infinite;
+  
+}
+
+
+
+@keyframes shakeAnimation {
+  50% {
+    transform: translateX(0);
+  }
+  0% {
+    transform: translateX(-5px);
+  }
+  20% {
+    transform: translateX(5px);
+  }
+  0% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(0);
+  }
 }
 
 .cardsContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 20px; /* Espacio entre las tarjetas */
+  padding: 20px;
 }
 
-h1{
-  color: black;
+h1 {
+  color: rgb(76, 2, 2);
+  margin-top: 30px; /* Añadido espacio en la parte superior */
 }
 
 .card {
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  border: 1.5px solid #9a9a9a;
+  border-radius: 20px;
+  border-style: groove;
   padding: 10px;
   margin: 10px;
   max-width: 300px;
+  box-shadow: 0px 0px 0px 1px #0056b3;
+  flex: 1; /* Para que las tarjetas se expandan en el contenedor */
 }
 
 .card h2 {
@@ -34,7 +67,7 @@ h1{
 }
 
 .card a {
-  display: block;
+  display: inline-block; /* Cambiado a inline-block para que el ancho se ajuste al contenido */
   background-color: #0056b3;
   color: #fff;
   text-decoration: none;
@@ -44,5 +77,5 @@ h1{
 }
 
 .card a:hover {
-  background-color:#007bff ;
+  background-color: #007bff;
 }

@@ -27,7 +27,9 @@ const projects = [
 const ProjectsCards = () => {
   return (
     <div className={styles.container}>
-      <h1>My Projects</h1>
+      <div className={styles.adverting}>
+      <h1>Esta sección aún está en desarrollo</h1>
+      </div>
       <div className={styles.cardsContainer}>
         {projects.map((project) => (
           <div key={project.id} className={styles.card}>

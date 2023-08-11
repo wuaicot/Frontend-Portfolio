@@ -37,10 +37,12 @@ const Contact = () => {
 
   return (
     <div className={styles.container}>
+      <div className={styles.Estoy}>
       <h4>
-        Estoy listo para iniciar un nuevo proyecto y ayudarte a llevar a cabo tu
-        idea.
+        "Estoy listo para iniciar un nuevo proyecto y ayudarte a llevar a cabo tu
+        idea"
       </h4>
+      </div>
 
       <h3>Contactame</h3>
 

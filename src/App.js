@@ -28,7 +28,7 @@ function App() {
             </li> */}
             <li className="Nav li">
               <NavLink to="/home" className="Nav-link">
-                Home
+                Presentación
               </NavLink>
             </li>
             <li className="Nav li">

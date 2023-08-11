@@ -6,6 +6,7 @@ import logoTwitter from "../../image/twitter.png";
 import HeroSocial from "../HeroSocial/HeroSocial";
 // import HeroButton from "../HeroButton/HeroButton";
  import gmailStiker from "../../image/gmail.png";
+ import CV from "../../cv/NaycolRLinares_cv.pdf";
  
 
 const gihubLink = "https://github.com/wuaicot";
@@ -29,17 +30,18 @@ const Home = () => {
     <section className={styles.seccion}>
       <div className={styles.Hcontainer}>
 
-        {/* <img class="glostick__account-details__avatar" src="https://gravatar.com/avatar/539879c51f50898247766a89ba00efea?s=96&amp;d=https://www.herokucdn.com/images/ninja-avatar-96x96.png" alt="wuaicot8@gmail.com" role="presentation"></img> */}
+        
 
-        <h1 id={styles.titleHome}> Naycol R. Linares V.</h1>
+        <h1 id={styles.titleHome}> Naycol R Linares V.</h1>
         <hr />
         <h3>
-          <span>Full Stack Web Developer</span>
+          <span>FULL STACK DEVELOPER</span>
           <br />
           <span>
-            JavaScript | Html | Css | React JS | Node | Redux | PostgreSQL | MongoDB | SCRUM
+           Javascript | React JS | Redux | Postgres-SQL | Git-fLOW | GitHub | Typescrypt | Node JS | Express | CSS | BootStarp | SCRUM
           </span>
         </h3>
+         <br/>
 
         <HeroSocial
           href={gihubLink}
@@ -85,7 +87,19 @@ const Home = () => {
           text="proyectos"
         />
       </div> */}
+          <br/><br/><br/><br/>
+                   <div className={styles.CVCV}>
+                  <div className={styles.stackCV}>
+                    <a className={styles.btndowload}
+                     href={CV}
+                     download="Naycol_R.Linares_cv"
+                    >
+                   descargar mi CV.
+                    </a>
+                  </div>
+                </div>
     </section>
+    
   );
 };
 
