@@ -24,7 +24,7 @@ const Contact = () => {
          //https://backend-portfolio-production-8985.up.railway.app/
          
       await axios.post(
-        "https://backend-portfolio-production-8985.up.railway.app/",
+        "https://backend-portfolio-production-8985.up.railway.app/externed/",
         formData
       );
       setShowSuccessMessage(true);
