@@ -6,7 +6,7 @@ import logoTwitter from "../../image/twitter.png";
 import HeroSocial from "../HeroSocial/HeroSocial";
 // import HeroButton from "../HeroButton/HeroButton";
  import gmailStiker from "../../image/gmail.png";
- import CV from "../../cv/NaycolRLinares_cv.pdf";
+ import CV from "../../cv/Naycol.Linares_PFL_CV.pdf";
  
 
 const gihubLink = "https://github.com/wuaicot";

@@ -1,6 +1,6 @@
 #titleHome{
   padding-top: 110px;
-    color: #282c34;
+    color: #000613;
 }
 
 
@@ -24,7 +24,7 @@ img{
   }
   .CVCV{
     margin-top: 20px;
-    background-color: #80869257;
+    
     border-radius: 20px;
     
   }
@@ -44,6 +44,7 @@ img{
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
+    border-style: groove;
     transition: background-color 0.3s ease;
     
     

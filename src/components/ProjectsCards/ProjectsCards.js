@@ -28,7 +28,7 @@ const ProjectsCards = () => {
   return (
     <div className={styles.container}>
       <div className={styles.adverting}>
-      <h1>Esta sección aún está en desarrollo</h1>
+      <h1>Esta sección aún está en desarrollo!</h1>
       </div>
       <div className={styles.cardsContainer}>
         {projects.map((project) => (

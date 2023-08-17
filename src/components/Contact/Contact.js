@@ -21,8 +21,10 @@ const Contact = () => {
     e.preventDefault();
     try {
       //await axios.post('http://localhost:5000/externed/contact', formData);
+         //https://backendportfolio-6aea0ff05588.herokuapp.com/
+         
       await axios.post(
-        "https://backendportfolio-6aea0ff05588.herokuapp.com/",
+        "backend-portfolio-production-8985.up.railway.app",
         formData
       );
       setShowSuccessMessage(true);
@@ -99,12 +101,12 @@ const Contact = () => {
       )}
 
           <div className={styles.Ninja}>
-      <img       
+      {/* <img       
         src="https://gravatar.com/avatar/539879c51f50898247766a89ba00efea?s=96&amp;d=https://www.herokucdn.com/images/ninja-avatar-96x96.png"
         alt="wuaicot8@gmail.com"
         role="presentation"
         >
-        </img>         
+        </img>          */}
 
         </div>        
 
