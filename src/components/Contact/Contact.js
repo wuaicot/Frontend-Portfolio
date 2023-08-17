@@ -21,10 +21,10 @@ const Contact = () => {
     e.preventDefault();
     try {
       //await axios.post('http://localhost:5000/externed/contact', formData);
-         //https://backendportfolio-6aea0ff05588.herokuapp.com/
+         //https://backend-portfolio-production-8985.up.railway.app/
          
       await axios.post(
-        "backend-portfolio-production-8985.up.railway.app",
+        "https://backend-portfolio-production-8985.up.railway.app/",
         formData
       );
       setShowSuccessMessage(true);
