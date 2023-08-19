@@ -76,8 +76,45 @@
     align-content:flex-end;
     padding: 5px;
     max-width: 2px;
-    min-height: 128px;
+    min-height: 158px;
     
 
+  }
+
+  /* styles.module.css */
+
+.imgNinja {
+  border-radius: 1px;
+  margin-left: 4px;
+  min-width: 110px !important;
+  animation: waveAnimation 2s ease-in ;
+}
+
+
+@keyframes waveAnimation {
+  30%, 100% {
+    transform: rotate(10deg) translateX(10);
+  }
+  50% {
+    transform: rotate(5deg) translateX(-10px); /* Cambia los valores según lo que quieras lograr */
+  }
+  100%{
+    transform: rotate(-5deg) translateX(10px);
+  }
+  50%{
+    transform: rotate(15deg) translateX(10px);
+
+  }
+  
+}
+
+
+  hr{
+   
+    display: flex;
+    margin-top: -1px;
+    margin-left: -25px;
+    max-width: 80px;
+    box-shadow: 0px 3px 2px 1px   #282c34;
   }
   

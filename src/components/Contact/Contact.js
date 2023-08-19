@@ -4,6 +4,7 @@ import styles from "./Contact.module.css";
 
 
 
+
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -95,20 +96,20 @@ const Contact = () => {
       </form>
       {showSuccessMessage && (
         <div className={styles["success-message"]}>
-          Gracias. Su mensaje fue enviado! Pronto me pondré en contacto.{" "}
+          Gracias. Su mensaje fue enviado! Pronto me pondré en contacto.{""}
         </div>
       )}
 
           <div className={styles.Ninja}>
-      {/* <img       
+      <img className={styles.imgNinja}       
         src="https://gravatar.com/avatar/539879c51f50898247766a89ba00efea?s=96&amp;d=https://www.herokucdn.com/images/ninja-avatar-96x96.png"
         alt="wuaicot8@gmail.com"
         role="presentation"
         >
-        </img>          */}
+        </img>            
 
         </div>        
-
+        <hr/> 
     </div>
   );
 };
