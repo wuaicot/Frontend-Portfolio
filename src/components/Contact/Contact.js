@@ -31,7 +31,7 @@ const Contact = () => {
     } catch (error) {
       console.error("Error sending message:", error);
       alert(
-        "Disculpe! en este momento no es posible el envío del mensaje, intente contactarme directamente a mi correo electronico. Gracias"
+        "Disculpe! en este momento no es posible el envío del mensaje, Puede contactarme directamente a mi correo electronico. Gracias!"
       );
     }
   };

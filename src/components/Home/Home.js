@@ -3,16 +3,17 @@ import styles from "./Home.module.css";
 import logoGithub from "../../image/github (3).png";
 import logoLinkedin from "../../image/linkedin.png";
 import logoTwitter from "../../image/twitter.png";
+import logoOutlook from "../../image/OutLook.png";
 import HeroSocial from "../HeroSocial/HeroSocial";
 // import HeroButton from "../HeroButton/HeroButton";
- import gmailStiker from "../../image/gmail.png";
+ //import gmailStiker from "../../image/gmail.png";
  import CV from "../../cv/Naycol.Linares_PFL_CV.pdf";
  
 
 const gihubLink = "https://github.com/wuaicot";
 const linkedinLink = "https://www.linkedin.com/in/wuaicot/";
 const twitterLink = "https://twitter.com/naiycol";
-const email = "https://mail.google.com/mail/wuaicot8@gmail.com"
+const email = "https://outlook.live.com/mail/wuaicot"
    
 const Home = () => {
   const handleScrollToTop = () => {
@@ -67,10 +68,10 @@ const Home = () => {
                 <HeroSocial
                   href={email}
                   target="_blank"
-                  src={gmailStiker}
-                  alt="gmail-Stiker"
-                  title="wuaicot8@gmail.com"
-                  linkName="wuaicot8@gmail.com"
+                  src={logoOutlook}
+                  alt="e-mail"
+                  title="wuaicot@hotmail.com"
+                  linkName="wuaicot@hotmail.com"
                   
                 />
       </div>
