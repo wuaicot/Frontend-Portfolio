@@ -105,11 +105,14 @@
     transform: rotate(15deg) translateX(10px);
 
   }
+  100%{
+    transform: rotate(-5deg) translateX(10px);
+  }
   
 }
 
 
-  hr{
+  .Nhr{
    
     display: flex;
     margin-top: -1px;

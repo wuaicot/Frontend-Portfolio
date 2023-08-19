@@ -109,7 +109,7 @@ const Contact = () => {
         </img>            
 
         </div>        
-        <hr/> 
+        <hr className={styles.Nhr}/> 
     </div>
   );
 };
