@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import styles from "./Home.module.css";
-import logoGithub from "../../image/github (3).png";
-import logoLinkedin from "../../image/linkedin.png";
-import logoTwitter from "../../image/twitter.png";
+import logoGithub from "../../image/logo-github-512.png";
+import logoLinkedin from "../../image/linkedin-logo-512.png";
+import logoTwitter from "../../image/logoX-cuadrado512.jpg";
 import logoOutlook from "../../image/OutLook.png";
 import HeroSocial from "../HeroSocial/HeroSocial";
 // import HeroButton from "../HeroButton/HeroButton";
@@ -26,7 +26,7 @@ const Home = () => {
   useEffect(() => {
     handleScrollToTop();
   }, []);
-
+      
   return (
     <section className={styles.seccion}>
       <div className={styles.Hcontainer}>
@@ -34,7 +34,7 @@ const Home = () => {
         
 
         <h1 id={styles.titleHome}> Naycol R Linares V.</h1>
-        <hr />
+        
         <h3>
           <span>FULL STACK DEVELOPER</span>
           <br />
@@ -51,19 +51,20 @@ const Home = () => {
           title="Github"
         />
 
+             <HeroSocial
+          href={twitterLink}
+          src={logoTwitter}
+          alt="logo de Twitter"
+          title="Twitter"
+         />
+
         <HeroSocial
           href={linkedinLink}
           src={logoLinkedin}
           alt="logo de linkedin"
           title="LinkedIn"
         />
-
-        <HeroSocial
-          href={twitterLink}
-          src={logoTwitter}
-          alt="logo de Twitter"
-          title="Twitter"
-        />
+        
 
                 <HeroSocial
                   href={email}
