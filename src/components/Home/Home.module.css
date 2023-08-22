@@ -9,6 +9,9 @@
   height :200px! important;
   margin-top: 60px;
   margin-bottom: -120px;
+  
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+
 }
 
 img{   
