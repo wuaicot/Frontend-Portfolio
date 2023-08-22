@@ -1,31 +1,24 @@
 #titleHome {
   padding-top: 110px;
   color: #06213e;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Ajusta los valores según tus preferencias */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
 }
-
 
 .mifoto{
   width: auto !important ;
   height :200px! important;
   margin-top: 55px;
   margin-bottom: -120px;
-
 }
 
-img{
-   
+img{   
     width: 75px;
     height: 75px;
 }
-
-
   
   .Hcontainer > * {
     margin-right: 15px; 
-   display: inline-flexbox;
-    
-        
+   display: inline-flexbox;        
   } 
 
   .seccion{
@@ -33,7 +26,6 @@ img{
     margin-top: -40px;
     text-align: center;
     justify-items: center;
-
   }
   .CVCV{
     margin-top: 20px;    
@@ -43,12 +35,10 @@ img{
   .stackCV{
     text-align: center;
     min-width: 15px;
-    margin-top: -67px;
-    
+    margin-top: -67px;    
   }
 
-  .btndowload {   
-    
+  .btndowload {      
     display: inline-block;
     padding: 10px 15px;
     background-color: #0056b3;
@@ -56,9 +46,7 @@ img{
     text-decoration: none;
     border-radius: 5px;
     border-style: groove;
-    transition: background-color 0.3s ease;
-
-    
+    transition: background-color 0.3s ease;    
   }
   
   .btndowload:hover {
