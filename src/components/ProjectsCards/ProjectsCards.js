@@ -17,9 +17,15 @@ const projects = [
   },
   {
     id: 3,
-    title: 'Proyecto 3',
-    description: 'Portal Video-Game',
+    title: 'Portal Video-Game',
+    description: 'aqui proximamnete podras crear tu colección favorita de videoguegos',
     deployedUrl: 'https://pi-videogames-main-mi-ihac35zgc-wuaicot.vercel.app/',
+  }
+  {
+    id: 4,
+    title: 'Proximamente',
+    description: '',
+    deployedUrl: '',
   }
   // Agrega más proyectos si es necesario
 ];
