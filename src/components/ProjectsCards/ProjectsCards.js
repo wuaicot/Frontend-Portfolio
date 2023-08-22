@@ -18,8 +18,8 @@ const projects = [
   {
     id: 3,
     title: 'Proyecto 3',
-    description: 'Descripción del proyecto 3',
-    deployedUrl: 'https://proyecto3.com',
+    description: 'Portal Video-Game',
+    deployedUrl: 'https://pi-videogames-main-mi-ihac35zgc-wuaicot.vercel.app/',
   }
   // Agrega más proyectos si es necesario
 ];
