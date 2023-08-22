@@ -8,6 +8,7 @@ import HeroSocial from "../HeroSocial/HeroSocial";
 // import HeroButton from "../HeroButton/HeroButton";
  //import gmailStiker from "../../image/gmail.png";
  import CV from "../../cv/Naycol.Linares_PFL_CV.pdf";
+ import miFoto from "../../cv/Naycol_Rodoolfo_Linares_Villasmil.jpg";
  
 
 const gihubLink = "https://github.com/wuaicot";
@@ -30,7 +31,10 @@ const Home = () => {
   return (
     <section className={styles.seccion}>
       <div className={styles.Hcontainer}>
-
+            <img className={styles.mifoto}
+            src={miFoto}
+            alt="Foto de Naycol R Linares V"
+            />
         
 
         <h1 id={styles.titleHome}> Naycol R Linares V.</h1>

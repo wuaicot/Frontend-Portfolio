@@ -5,7 +5,13 @@
 }
 
 
+.mifoto{
+  width: auto !important ;
+  height :200px! important;
+  margin-top: 55px;
+  margin-bottom: -120px;
 
+}
 
 img{
    
@@ -37,20 +43,20 @@ img{
   .stackCV{
     text-align: center;
     min-width: 15px;
-    
+    margin-top: -67px;
     
   }
 
   .btndowload {   
+    
     display: inline-block;
-    padding: 10px 20px;
+    padding: 10px 15px;
     background-color: #0056b3;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
     border-style: groove;
     transition: background-color 0.3s ease;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Ajusta los valores según tus preferencias */
 
     
   }
