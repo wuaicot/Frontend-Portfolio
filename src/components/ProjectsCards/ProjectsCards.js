@@ -24,8 +24,8 @@ const projects = [
   {
     id: 4,
     title: 'Proximamente',
-    description: '',
-    deployedUrl: '',
+    description: 'aún en desarrollo',
+    deployedUrl: 'http://www.enespera.com',
   }
   // Agrega más proyectos si es necesario
 ];
