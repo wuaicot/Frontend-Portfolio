@@ -1,5 +1,6 @@
 /* Contact.module.css */
 
+
 /* Estilos para el contenedor del formulario */
 .container {
     max-width: 400px;
@@ -27,7 +28,7 @@
   label {
     display: block;
     margin-bottom: 5px;
-    background-color: #40408217;
+    background-color: #4040820c;
     border-radius: 20px;
   }
   
@@ -37,8 +38,8 @@
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
-    border: 1px solid #404082;
-    border-radius: 20px;
+    /* border: 0.5px solid #404082; */
+    border-radius: 12px;
   }
   
   /* Estilos para el botón de enviar */
@@ -47,8 +48,11 @@
     color: #fff;
     border: none;
     padding: 10px 20px;
-    border-radius: 4px;
+    border-radius: 12px;
     cursor: pointer;
+    width: 210px;
+    height: auto;
+    border-style: groove;
   }
   
   /* Estilos para el mensaje de éxito */
@@ -69,7 +73,7 @@
     }
   }
   
-  .Ninja{
+  /* .Ninja{
     margin-top: 4px;
     background-color: #282c34;
     display: flex;
@@ -83,12 +87,12 @@
 
   /* styles.module.css */
 
-.imgNinja {
+/* .imgNinja {
   border-radius: 1px;
   margin-left: 4px;
   min-width: 110px !important;
   animation: waveAnimation 2s ease-in ;
-}
+}  */
 
 
 @keyframes waveAnimation {
@@ -119,5 +123,20 @@
     margin-left: -25px;
     max-width: 80px;
     box-shadow: 0px 3px 2px 1px   #282c34;
+  }
+
+  .whatsapp{
+    position: relative;
+    margin-top: 10px;
+     
+     
+    
+    
+  }
+  .gmail{
+    position: relative;
+   
+    
+    
   }
   

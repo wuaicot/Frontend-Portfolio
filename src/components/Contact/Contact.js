@@ -1,7 +1,14 @@
 import React, { useState } from "react";
 import axios from "axios";
 import styles from "./Contact.module.css";
+import HeroSocial from "../HeroSocial/HeroSocial";
+import gmailLogo from "../../image/gmail.png";
+import whatsappLogo from "../../image/logoWhatsap.png";
 
+
+const cellPhone =
+  "https://api.whatsapp.com/send/?phone=56937735366&text&app_absent=0";
+  const email = "https://mail.google.com/mail/wuaicot8@gmail"
 
 
 
@@ -92,7 +99,32 @@ const Contact = () => {
             
 
         <button type="submit">Enviar</button>
-        
+         <hr/>
+                <div className={styles.whatsapp}>
+                <HeroSocial 
+                  src={whatsappLogo}
+                  alt="phone-Stiker"
+                  title="+56937735366"
+                  header="WhatsApp"
+                  href={cellPhone}
+                  target="_blank"
+                  linkName="Enlace al Chat"
+                 />
+                 </div>
+
+                  <div className={styles.gmail}>
+               <HeroSocial 
+                  src={gmailLogo}
+                  alt="phone-Stiker"
+                  title="wuaicot8@gmail.com"
+                  header="gmail"
+                  href={email}
+                  target="_blank"
+                  linkName="wuaicot8@gmail.com"
+                 />
+                </div>
+                <hr/>
+
       </form>
       {showSuccessMessage && (
         <div className={styles["success-message"]}>
@@ -100,7 +132,10 @@ const Contact = () => {
         </div>
       )}
 
-          <div className={styles.Ninja}>
+            
+
+
+          {/* <div className={styles.Ninja}>
       <img className={styles.imgNinja}       
         src="https://gravatar.com/avatar/539879c51f50898247766a89ba00efea?s=96&amp;d=https://www.herokucdn.com/images/ninja-avatar-96x96.png"
         alt="wuaicot8@gmail.com"
@@ -109,9 +144,12 @@ const Contact = () => {
         </img>            
 
         </div>        
-        <hr className={styles.Nhr}/> 
+        <hr className={styles.Nhr}/>  */}
     </div>
   );
 };
 
 export default Contact;
+
+
+
