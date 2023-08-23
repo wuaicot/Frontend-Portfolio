@@ -26,13 +26,11 @@ const About = () => {
             Hola 🖐️😉, puedes llamarme Rodolfo.
           </p>
           <p className={styles.description}>
-            Soy entusiasta de la educación digital y apasionado de la educación
-            efectiva, del rápido aprendizaje y del crecimiento personal y
+            Soy entusiasta de la educación digital efectiva, del rápido aprendizaje y del crecimiento personal y
             profesional. Disfruto creando productos digitales, especializado en
-            frontend y desarrollándome como un especialista en backend para ser
-            un fullstack web javascript. Valorando la comunicación y el trabajo
+            frontend y en backend. Valorando la comunicación y el trabajo
             en equipo, busco siempre nuevos retos y me adapto fácilmente a los
-            cambios. Abierto a aprender nuevas tecnologías y lenguajes. 📲💻
+            cambios. Abierto a aprender nuevas tecnologías y lenguajes de programación. 📲💻
           </p>
           <p  className={styles.description}>
           La comunicación y el trabajo en equipo es para mí esencial para poder crecer como desarrollador. Soy proactivo y metódico, siempre busco nuevos retos y me adapto fácilmente a los cambios, estoy abierto a aprender nuevas tecnologías y lenguajes.
