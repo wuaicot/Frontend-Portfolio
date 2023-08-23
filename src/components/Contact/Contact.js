@@ -123,7 +123,7 @@ const Contact = () => {
                   linkName="wuaicot8@gmail.com"
                  />
                 </div>
-                <hr/>
+                
 
       </form>
       {showSuccessMessage && (
