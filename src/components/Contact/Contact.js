@@ -5,12 +5,9 @@ import HeroSocial from "../HeroSocial/HeroSocial";
 import gmailLogo from "../../image/gmail.png";
 import whatsappLogo from "../../image/logoWhatsap.png";
 
-
 const cellPhone =
   "https://api.whatsapp.com/send/?phone=56937735366&text&app_absent=0";
-  const email = "https://mail.google.com/mail/wuaicot8@gmail"
-
-
+const email = "https://mail.google.com/mail/wuaicot8@gmail";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -29,10 +26,13 @@ const Contact = () => {
     e.preventDefault();
     try {
       //await axios.post('http://localhost:5000/externed/contact', formData);
-         //https://backend-portfolio-production-8985.up.railway.app/
-         
+      //https://backend-portfolio-production-8985.up.railway.app/
+
       await axios.post(
-        await axios.post('https://backend-portfolio-production-8985.up.railway.app/', formData)
+        await axios.post(
+          "https://backend-portfolio-production-8985.up.railway.app/",
+          formData
+        )
       );
       setShowSuccessMessage(true);
       setFormData({ name: "", email: "", message: "" });
@@ -47,10 +47,10 @@ const Contact = () => {
   return (
     <div className={styles.container}>
       <div className={styles.Estoy}>
-      <h4>
-        "Estoy listo para iniciar un nuevo proyecto y ayudarte a llevar a cabo tu
-        idea"
-      </h4>
+        <h4>
+          "Estoy listo para iniciar un nuevo proyecto y ayudarte a llevar a cabo
+          tu idea"
+        </h4>
       </div>
 
       <h3>Contactame</h3>
@@ -90,41 +90,34 @@ const Contact = () => {
             value={formData.message}
             onChange={handleChange}
             placeholder="Cuentame aquí!"
-            required
-            >
-
-            </textarea>  
-            </div>          
-        
-            
+            required></textarea>
+        </div>
 
         <button type="submit">Enviar</button>
-         <hr/>
-                <div className={styles.whatsapp}>
-                <HeroSocial 
-                  src={whatsappLogo}
-                  alt="phone-Stiker"
-                  title="+56937735366"
-                  header="WhatsApp"
-                  href={cellPhone}
-                  target="_blank"
-                  linkName="Enlace al Chat"
-                 />
-                 </div>
+        <hr />
+        <div className={styles.whatsapp}>
+          <HeroSocial
+            src={whatsappLogo}
+            alt="phone-Stiker"
+            title="+56937735366"
+            header="WhatsApp"
+            href={cellPhone}
+            target="_blank"
+            linkName="Enlace al Chat"
+          />
+        </div>
 
-                  <div className={styles.gmail}>
-               <HeroSocial 
-                  src={gmailLogo}
-                  alt="phone-Stiker"
-                  title="wuaicot8@gmail.com"
-                  header="gmail"
-                  href={email}
-                  target="_blank"
-                  linkName="wuaicot8@gmail.com"
-                 />
-                </div>
-                
-
+        <div className={styles.gmail}>
+          <HeroSocial
+            src={gmailLogo}
+            alt="phone-Stiker"
+            title="wuaicot8@gmail.com"
+            header="gmail"
+            href={email}
+            target="_blank"
+            linkName="wuaicot8@gmail.com"
+          />
+        </div>
       </form>
       {showSuccessMessage && (
         <div className={styles["success-message"]}>
@@ -132,10 +125,7 @@ const Contact = () => {
         </div>
       )}
 
-            
-
-
-          {/* <div className={styles.Ninja}>
+      {/* <div className={styles.Ninja}>
       <img className={styles.imgNinja}       
         src="https://gravatar.com/avatar/539879c51f50898247766a89ba00efea?s=96&amp;d=https://www.herokucdn.com/images/ninja-avatar-96x96.png"
         alt="wuaicot8@gmail.com"
@@ -150,6 +140,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
-
-

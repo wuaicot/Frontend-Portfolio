@@ -3,6 +3,20 @@
   
 }
 
+.mifoto {
+  width: auto !important;
+  height: 200px !important;
+  margin-top: 60px;
+  margin-bottom: -120px;
+  margin-left: 300px;
+ position: relative;
+ display: inline-table;
+  border-radius: 5px;
+  border-style: groove;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
 .container {
     max-width: 800px;
     margin: 0 auto;
@@ -10,25 +24,28 @@
     text-align: justify;
     background-color: #ebe9e5;
     
+    
   }
   
-  .aboutTittle {
+  /* .aboutTittle {
     font-size: 36px;
     font-weight: bold;
     color: #333;
     text-align: center;
     margin-bottom: 20px;
+    margin-left: 30px;
   }
-  
+   */
   .puedesllam {
     font-size: 24px;
     font-weight: bold;
     color: #555;
     text-align: center;
+    margin-top: 120px;
   }
+  
   .descriptionCent{
-    text-align: center;
-    
+    text-align: center;    
   }
   
   .description {

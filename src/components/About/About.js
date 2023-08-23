@@ -1,6 +1,6 @@
 
 import React, { useEffect } from "react";
-
+import miFoto from "../../cv/Naycol_Rodoolfo_Linares_Villasmil.jpg";
 import styles from "./About.module.css";
 import Skills from "../Skl/Skills";
 import CV from "../../cv/NaycolRLinares_cv.pdf";
@@ -21,7 +21,13 @@ const About = () => {
     <React.Fragment>
       <section className={styles.conGener}>
         <div className={styles.container}>
-          <h1 className={styles.aboutTittle}>Sobre Mí</h1>
+
+        <img className={styles.mifoto}
+            src={miFoto}
+            alt="Foto de Naycol R Linares V"
+            />
+
+          {/* <h1 className={styles.aboutTittle}>Sobre Mí</h1> */}
           <p className={styles.puedesllam}>
             Hola 🖐️😉, puedes llamarme Rodolfo.
           </p>
