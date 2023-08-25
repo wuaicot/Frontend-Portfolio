@@ -38,7 +38,7 @@ function App() {
             </li>
             <li className="Nav li">
               <NavLink to="/projects" className="Nav-link">
-                Proyectos
+                Experiencia
               </NavLink>
             </li>
             <li className="Nav li">
