@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import miFoto from "../../cv/Naycol_Rodoolfo_Linares_Villasmil.jpg";
 import styles from "./About.module.css";
 import Skills from "../Skl/Skills";
-import CV from "../../cv/NaycolRLinares_cv.pdf";
+import CV from "../../cv/Naycol-Linares.pdf";
 
 const About = () => {
   const handleScrollToTop = () => {
@@ -86,7 +86,7 @@ const About = () => {
                   <div className={styles.stackCV}>
                     <a className={styles.btndowload}
                      href={CV}
-                     download="Naycol_R.Linares_cv"
+                     download="Naycol-Linares.pdf"
                     >
                    descargar mi CV aquí.
                     </a>

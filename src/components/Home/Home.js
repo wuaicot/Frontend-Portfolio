@@ -5,9 +5,10 @@ import logoLinkedin from "../../image/linkedin-logo-512.png";
 import logoTwitter from "../../image/logoX-cuadrado512.jpg";
 import logoOutlook from "../../image/OutLook.png";
 import HeroSocial from "../HeroSocial/HeroSocial";
+import CV from "../../cv/Naycol-Linares.pdf";
+
 // import HeroButton from "../HeroButton/HeroButton";
  //import gmailStiker from "../../image/gmail.png";
- import CV from "../../cv/Naycol.Linares_PFL_CV.pdf";
 //  import miFoto from "../../cv/Naycol_Rodoolfo_Linares_Villasmil.jpg";
  
 
@@ -98,7 +99,7 @@ const Home = () => {
                   <div className={styles.stackCV}>
                     <a className={styles.btndowload}
                      href={CV}
-                     download="Naycol_R.Linares_cv"
+                     download="Naycol-Linares.pdf"
                     >
                    descargar mi CV.
                     </a>
