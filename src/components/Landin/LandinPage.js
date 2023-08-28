@@ -18,12 +18,12 @@ const LandinPage = () => {
       <h1 className={styles.acheuno}>Gacias por visitar mi portafolio digital</h1>
       
       <div className={styles.openS}>
-        <p className={styles.tgTr}>¿te gustaría ver algunas imagenes de mi galería artistica?</p>
+        <p className={styles.tgTr}>¿te invito a ver algunas imagenes de mi galería artistica?</p>
         <HeroSocial
           href={open}
           src={openLogo}
           alt="logo de openSea"
-          title="OpenSea"
+          title="WUAICOTNFT22"
         />
       </div>
     </div>
