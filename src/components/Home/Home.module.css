@@ -1,7 +1,9 @@
 #titleHome {
   padding-top: 110px;
   color: #06213e;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+  font: 2.3em sans-serif;
+  font-weight: 600;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.526); 
 }
 
 /* .mifoto{
