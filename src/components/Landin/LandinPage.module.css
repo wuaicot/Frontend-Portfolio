@@ -1,23 +1,22 @@
 .container {
-  position: absolute;
-   
-  left: 0;
-  width: 97.2%;
-  height: 75%;
-  padding: 20px;
-  text-align: center;
-  background-color: #f0f0f0;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+     position: relative;  
+     height: 47px;
+     display:block;
+     align-items: center;     
+     border-radius: 13px;
+     
+  }
   
-  h1 {
-    margin-top: 177px; 
-    font-size: 36px;
+
+  
+  .acheuno {
+    padding-top: 5px;
+    margin-top: 27px; 
+    font-size: 27px;
     color: white;
+    
+
     
   }
 
-  .div{
-    background-color: blue;
-  }
+ 

@@ -12,8 +12,11 @@ const LandinPage = () => {
 
   return (
     <div className={styles.container} style={containerStyle}>
-      <h1>Welcome to My Digital Portfolio</h1>
-      {/* <p>un dos</p> */}
+      <h1 className={styles.acheuno}>Gacias por visitar mi portafolio digital</h1>
+      
+      <div>
+        <p>un dos</p>
+      </div>
     </div>
   );
 };
@@ -21,4 +24,3 @@ const LandinPage = () => {
 export default LandinPage;
 
 
-//<div  style={containerStyle}>
