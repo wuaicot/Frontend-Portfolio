@@ -14,10 +14,23 @@
     color: white;    
   }
 
+  .tgTr{
+    font-weight: 500;
+    padding: 0px 10px 10px 10px;
+
+  }
+
   .openS{
     margin-top: 70px;
-    
+    margin-left: 15px;
+    border: 1px solid #09012b;
+    border-radius: 7px;
+    border-style: groove;
     display: grid;
+    max-width: 500px;
+    justify-content: center;
+    justify-items: center;
+    display: inline-block;
   }
 
  
