@@ -14,7 +14,7 @@ const LandinPage = () => {
     <div className={styles.container} style={containerStyle}>
       <h1 className={styles.acheuno}>Gacias por visitar mi portafolio digital</h1>
       
-      <div>
+      <div className={styles.openS}>
         <p>un dos</p>
       </div>
     </div>
