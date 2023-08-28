@@ -6,14 +6,12 @@
      border-radius: 3px;   
       
   } 
-  
- 
+   
   .acheuno {
     padding-top: 0px;
     margin-top: 27px; 
     font-size: 27px;
-    color: white;    
-    
+    color: white;      
    
     animation: lightning 0.9s infinite alternate;
   }
@@ -21,11 +19,8 @@
   /* Define la animación lightning */
   @keyframes lightning {
     from { box-shadow: 0px 0px 40px #000; }
-    to { box-shadow: 0px 0px 10px #12fbec; }
-    
-  }  
-
-  
+    to { box-shadow: 0px 0px 10px #12fbec; }    
+  }    
 
   .openS {
     margin-top: 70px;
@@ -50,6 +45,15 @@
     transform: translate(0, 5px);
   }
   
+   .certifFswd{
+    padding-top: 5px;
+      
+    display: flex;
+    justify-content:space-around;
+    align-content: center;
+    border-top: 10px solid rgb(18, 18, 135);
+
+   }
 
 
 
