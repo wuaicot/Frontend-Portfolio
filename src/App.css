@@ -29,7 +29,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   
-  z-index: 100; /* Ajusta el valor de z-index según tus necesidades */
+  z-index: 100; 
   border-radius: 20px 20px 20px 20px;
   border-style: groove;
 }
@@ -47,7 +47,7 @@
 
 /* LandinPage.module.css */
 .Nav {
-  margin-top: 10vh; /* Ajusta el valor según la altura del elemento .App-header */
+  margin-top: 10vh; 
   background-color: transparent;
   display: inline-block;
   gap: 33px;
