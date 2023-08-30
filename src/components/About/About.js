@@ -18,7 +18,7 @@ const About = () => {
   }, []);
 
   return (
-    <React.Fragment>
+    <React.Fragment className={styles.elgrid}>
       <section className={styles.conGener}>
         <div className={styles.container}>
 
@@ -93,10 +93,11 @@ const About = () => {
                   </div>
                 </div>
         </div>
-      </section >
-      <div className={styles.skillsgrid}>
+        <div >
       <Skills />
       </div>
+      </section >
+      
     </React.Fragment>
   );
 };
