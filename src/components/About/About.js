@@ -88,7 +88,7 @@ const About = () => {
                      href={CV}
                      download="Naycol-Linares.pdf"
                     >
-                   descargar mi CV aquí.
+                   Haz clic para descargar mi CV aquí.
                     </a>
                   </div>
                 </div>
