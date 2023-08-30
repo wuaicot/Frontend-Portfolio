@@ -1,0 +1,6 @@
+.skillsIcons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas de tamaño igual */
+    grid-gap: 20px; /* Espacio entre elementos */
+  }
+  
