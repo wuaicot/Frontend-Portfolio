@@ -27,10 +27,10 @@ const Contact = () => {
     try {
       //await axios.post('http://localhost:5000/externed/contact', formData);
       //https://backend-portfolio-production-8985.up.railway.app/
-
+        
       await axios.post(
         await axios.post(
-          "https://backend-portfolio-production-8985.up.railway.app/",
+          "/",
           formData
         )
       );
