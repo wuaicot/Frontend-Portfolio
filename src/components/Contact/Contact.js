@@ -25,15 +25,10 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      //await axios.post('http://localhost:5000/externed/contact', formData);
-      //https://backend-portfolio-production-8985.up.railway.app/
-        
-      await axios.post(
-        await axios.post(
-          "/",
-          formData
-        )
-      );
+      
+              
+      await axios.post("http://localhost:5000/externed/contact", formData);
+  
       setShowSuccessMessage(true);
       setFormData({ name: "", email: "", message: "" });
     } catch (error) {
@@ -125,18 +120,16 @@ const Contact = () => {
         </div>
       )}
 
-      {/* <div className={styles.Ninja}>
-      <img className={styles.imgNinja}       
-        src="https://gravatar.com/avatar/539879c51f50898247766a89ba00efea?s=96&amp;d=https://www.herokucdn.com/images/ninja-avatar-96x96.png"
-        alt="wuaicot8@gmail.com"
-        role="presentation"
-        >
-        </img>            
-
-        </div>        
-        <hr className={styles.Nhr}/>  */}
+     
     </div>
   );
 };
 
 export default Contact;
+
+//await axios.post('http://localhost:5000/externed/contact', formData);
+      //https://backend-portfolio-production-8985.up.railway.app/
+
+
+
+      
