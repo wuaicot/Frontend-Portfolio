@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
  import reportWebVitals from './reportWebVitals';
-//  import axios from "axios";
+ import axios from "axios";
 
-//  axios.defaults.baseURL = process.env.BACKEND_URL;
+ axios.defaults.baseURL = process.env.BACKEND_URL;
 
 const root = document.getElementById('root');
 ReactDOM.render(
