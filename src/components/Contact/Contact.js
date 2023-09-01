@@ -27,7 +27,7 @@ const Contact = () => {
     try {
       
               
-      await axios.post("https://backend-portfolio-production-737e.up.railway.app/");
+      await axios.post("/", formData);
   
       setShowSuccessMessage(true);
       setFormData({ name: "", email: "", message: "" });
