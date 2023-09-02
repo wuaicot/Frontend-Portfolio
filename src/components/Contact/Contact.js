@@ -26,7 +26,7 @@ const Contact = () => {
     e.preventDefault();
     try {
                     
-      await axios.post("http://localhost:5000", formData);
+      await axios.post("http://localhost:5000/externed/contact", formData);
 
       setShowSuccessMessage(true);
       setFormData({ name: "", email: "", message: "" });
