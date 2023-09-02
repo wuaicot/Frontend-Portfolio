@@ -21,12 +21,13 @@ const Contact = () => {
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
-     //https://backend-portfolio-production-737e.up.railway.app/
+     
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
                     
-      await axios.post("https://backend-portfolio-production-737e.up.railway.app/", formData);
+      await axios.post("https://backend-portfolio-production-737e.up.railway.app/externed/contact", formData);
+
 
       setShowSuccessMessage(true);
       setFormData({ name: "", email: "", message: "" });
