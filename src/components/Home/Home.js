@@ -5,7 +5,7 @@ import logoLinkedin from "../../image/linkedin-logo-512.png";
 import logoTwitter from "../../image/logoX-cuadrado512.jpg";
 import logoOutlook from "../../image/OutLook.png";
 import HeroSocial from "../HeroSocial/HeroSocial";
-import CV from "../../cv/Naycol-Linares.pdf";
+import CV from "../../cv/NaycolRLinaresV._CV.pdf";
 
 // import HeroButton from "../HeroButton/HeroButton";
  //import gmailStiker from "../../image/gmail.png";
@@ -38,7 +38,7 @@ const Home = () => {
             /> */}
         
 
-        <h1 id={styles.titleHome}> Naycol R Linares V.</h1>
+        <h1 id={styles.titleHome}> NAYCOL R. LINARES </h1>
         
         <h3>
           <span>FULL STACK DEVELOPER</span>
@@ -99,7 +99,7 @@ const Home = () => {
                   <div className={styles.stackCV}>
                     <a className={styles.btndowload}
                      href={CV}
-                     download="Naycol-Linares.pdf"
+                     download="NaycolRLinaresV._CV.pdf"
                     >
                    descargar mi CV.
                     </a>
