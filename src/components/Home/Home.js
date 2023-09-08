@@ -5,7 +5,7 @@ import logoLinkedin from "../../image/linkedin-logo-512.png";
 import logoTwitter from "../../image/logoX-cuadrado512.jpg";
 import logoOutlook from "../../image/OutLook.png";
 import HeroSocial from "../HeroSocial/HeroSocial";
-import CV from "../../cv/NaycolRLinaresV._CV.pdf";
+import CV from "../../cv/Naycol_Linares_CV.pdf";
 
 // import HeroButton from "../HeroButton/HeroButton";
  //import gmailStiker from "../../image/gmail.png";
@@ -99,7 +99,7 @@ const Home = () => {
                   <div className={styles.stackCV}>
                     <a className={styles.btndowload}
                      href={CV}
-                     download="NaycolRLinaresV._CV.pdf"
+                     download="Naycol_Linares_CV.pdf"
                     >
                    descargar mi CV.
                     </a>
