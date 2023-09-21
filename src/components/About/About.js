@@ -93,8 +93,8 @@ const About = () => {
                   </div>
                 </div>
         </div>
-        <div >
-      <Skills />
+        <div className={styles.Skillsdiv}>
+      <Skills  />
       </div>
       </section >
       

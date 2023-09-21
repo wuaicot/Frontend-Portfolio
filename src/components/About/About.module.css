@@ -115,7 +115,10 @@
     min-width: 15px;
   }
   
-  
+  .Skillsdiv{
+   display: grid;
+    padding-top: 60px;
+  }
   
  
   
