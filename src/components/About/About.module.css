@@ -118,6 +118,7 @@
   .Skillsdiv{
    display: grid;
     padding-top: 60px;
+    border-style: groove;
   }
   
  

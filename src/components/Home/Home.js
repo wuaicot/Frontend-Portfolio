@@ -44,7 +44,7 @@ const Home = () => {
           <span>FULL STACK WEB DEVELOPER</span>
           <br />
           <span>
-           Javascript | React JS | Redux | Postgres-SQL | Git-fLOW | GitHub | Typescrypt | Node JS | Express | CSS | BootStarp | SCRUM
+           Javascript | React JS | Redux | Postgres-SQL | Git-fLOW | GitHub | Typescrypt | Node JS | Express | CSS | BootStarp | Tailwind | SCRUM
           </span>
         </h3>
          <br/>
