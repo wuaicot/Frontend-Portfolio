@@ -38,10 +38,10 @@ const Home = () => {
             /> */}
         
 
-        <h1 id={styles.titleHome}> NAYCOL R. LINARES </h1>
+        <h1 id={styles.titleHome}> NAYCOL LINARES </h1>
         
         <h3>
-          <span>FULL STACK DEVELOPER</span>
+          <span>FULL STACK WEB DEVELOPER</span>
           <br />
           <span>
            Javascript | React JS | Redux | Postgres-SQL | Git-fLOW | GitHub | Typescrypt | Node JS | Express | CSS | BootStarp | SCRUM

@@ -24,7 +24,7 @@ const About = () => {
 
         <img className={styles.mifoto}
             src={miFoto}
-            alt="Foto de Naycol R Linares V"
+            alt="Foto de Naycol  Linares "
             />
 
           {/* <h1 className={styles.aboutTittle}>Sobre Mí</h1> */}
