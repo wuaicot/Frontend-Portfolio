@@ -57,3 +57,34 @@ img{
   .btndowload:hover {
     background-color: #007bff;
   }
+
+ /* Agrega estilos para el modal */
+.languageModal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.832);
+  padding: 20px;
+  border-radius: 50px ;
+  
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  text-align: center;
+}
+
+/* Estilos para los botones de idioma */
+.languagemodal button {
+  margin: 10px;
+  padding: 10px 25px;
+  background-color: #007bff; /* Cambia el color de fondo según tu preferencia */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.languagemodal button:hover {
+  background-color: #04fad5; /* Cambia el color de fondo al pasar el mouse por encima */
+}

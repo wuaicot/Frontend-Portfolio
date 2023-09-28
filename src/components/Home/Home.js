@@ -6,7 +6,8 @@ import logoTwitter from "../../image/logoX-cuadrado512.jpg";
 import logoOutlook from "../../image/OutLook.png";
 import HeroSocial from "../HeroSocial/HeroSocial";
 import CV from "../../cv/Naycol_Linares_CV.pdf";
-import CV_EN from "../../cv/Naycol_Linares_CVe.pdf"; // Reemplaza con la URL correcta de tu CV en Inglés
+import CV_EN from "../../cv/Naycol_Linares_CVe.pdf";
+import Modal from "react-modal";
 
 const gihubLink = "https://github.com/wuaicot";
 const linkedinLink = "https://www.linkedin.com/in/wuaicot/";
@@ -14,7 +15,7 @@ const twitterLink = "https://twitter.com/naiycol";
 const email = "https://outlook.live.com/mail/wuaicot";
 
 const Home = () => {
-  const [selectedLanguage, setSelectedLanguage] = useState("es"); // Por defecto, selecciona Español
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
     handleScrollToTop();
@@ -27,13 +28,23 @@ const Home = () => {
     });
   };
 
+  const handleDownloadClick = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleLanguageSelect = (language) => {
+    setIsModalOpen(false);
+
+    if (language === "es") {
+      window.location.href = CV;
+    } else {
+      window.location.href = CV_EN;
+    }
+  };
+
   return (
     <section className={styles.seccion}>
       <div className={styles.Hcontainer}>
-        {/* <img className={styles.mifoto}
-            src={miFoto}
-            alt="Foto de Naycol R Linares V"
-            /> */}
         <h1 id={styles.titleHome}> NAYCOL LINARES </h1>
         <h3>
           <span>FULL STACK WEB DEVELOPER</span>
@@ -79,21 +90,27 @@ const Home = () => {
 
       <div className={styles.CVCV}>
         <div className={styles.stackCV}>
-          <button
-            className={styles.btndowload}
-            onClick={() => {
-              const userLanguage = window.confirm("¿En qué idioma desea descargar el CV?\n\nSeleccione 'Aceptar' para Español o 'Cancelar' para Inglés.");
-              if (userLanguage) {
-                window.location.href = CV; // Descargar el archivo en Español
-              } else {
-                window.location.href = CV_EN; // Reemplaza CV_EN con la URL de tu CV en Inglés
-              }
-            }}
-          >
+          <button className={styles.btndowload} onClick={handleDownloadClick}>
             Descargar mi CV
           </button>
         </div>
       </div>
+
+      {/* Modal para la selección de idioma */}
+      <Modal
+        isOpen={isModalOpen}
+        onRequestClose={() => setIsModalOpen(false)}
+        contentLabel="Seleccionar idioma"
+        className={styles.languageModal}
+      >
+        <h2>¿ En que idioma desea descargar el CV ?</h2>
+        <button className={styles.languageButton} onClick={() => handleLanguageSelect("es")}>
+          Español
+        </button>
+        <button className={styles.languageButton} onClick={() => handleLanguageSelect("en")}>
+          Inglés
+        </button>
+      </Modal>
     </section>
   );
 };
