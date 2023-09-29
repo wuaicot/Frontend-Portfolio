@@ -46,8 +46,8 @@ const Home = () => {
     <section className={styles.seccion}>
       <div className={styles.Hcontainer}>
         <h1 id={styles.titleHome}> NAYCOL LINARES </h1>
-        <h3>
-          <span>FULL STACK WEB DEVELOPER</span>
+        <h2 className={styles.tSpan} >FULL STACK WEB DEVELOPER</h2>
+        <h3>          
           <br />
           <span>
             ReactJS | NodeJS | JavaScript | HTML | CSS | Redux | Express | Postgre-SQL | Bash | GitHub | BootStarp | Tailwind | SCRUM

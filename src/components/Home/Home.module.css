@@ -6,6 +6,16 @@
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.526); 
 }
 
+ h2{
+
+  display: block;
+  margin-top: -23px;
+  color: #06213e;
+  font: 1em sans-serif;
+  font-weight: 550;
+
+ }
+
 /* .mifoto{
   width: auto !important ;
   height :200px! important;
@@ -88,3 +98,10 @@ img{
 .languagemodal button:hover {
   background-color: #04fad5; /* Cambia el color de fondo al pasar el mouse por encima */
 }
+
+h3{
+  padding: 0; 
+
+ }
+  
+ 
