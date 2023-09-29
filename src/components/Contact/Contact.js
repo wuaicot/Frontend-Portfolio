@@ -130,7 +130,7 @@ const Contact = () => {
         className={styles.successModal}
       >
         <h2>Gracias. Su mensaje fue enviado!</h2>
-        <p>Pronto me pondré en contacto 👍</p>
+        <p>Pronto me pondré en contacto con usted 👍</p>
         <button onClick={closeModal}>Cerrar</button>
       </Modal>
     </div>
