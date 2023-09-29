@@ -1,11 +1,14 @@
-
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import miFoto from "../../cv/Naycol_Rodoolfo_Linares_Villasmil.jpg";
 import styles from "./About.module.css";
 import Skills from "../Skl/Skills";
+import Modal from "react-modal"; // Importa react-modal
 import CV from "../../cv/Naycol_Linares_CV.pdf";
+import CV_EN from "../../cv/Naycol_Linares_CVe.pdf";
 
 const About = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   const handleScrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -17,15 +20,29 @@ const About = () => {
     handleScrollToTop();
   }, []);
 
+  const handleDownloadClick = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleLanguageSelect = (language) => {
+    setIsModalOpen(false);
+
+    if (language === "es") {
+      window.location.href = CV;
+    } else {
+      window.location.href = CV_EN;
+    }
+  };
+
   return (
     <React.Fragment className={styles.elgrid}>
       <section className={styles.conGener}>
         <div className={styles.container}>
-
-        <img className={styles.mifoto}
+          <img
+            className={styles.mifoto}
             src={miFoto}
-            alt="Foto de Naycol  Linares "
-            />
+            alt="Foto de Naycol Linares"
+          />
 
           {/* <h1 className={styles.aboutTittle}>Sobre Mí</h1> */}
           <p className={styles.puedesllam}>
@@ -82,21 +99,32 @@ const About = () => {
               Esta app hace uso de la libería React-Redux para manejar estados globales en la misma, además de los estados locales propios de cada componente en React. Cuenta con distintas secciones panejadas por rutas, sobre las que aprovecho las características de React para reutilizar componentes. Las tecnologías que utilicé fueron HTML, CSS, JavaScript, React JS, React-Redux, Node JS, Express, PostgreSQL, Sequelize, Git/Github.           
               </p>
               <hr/>
-                <div className={styles.CVCV}>
-                  <div className={styles.stackCV}>
-                    <a className={styles.btndowload}
-                     href={CV}
-                     download="Naycol_Linares_CV.pdf"
-                    >
-                   descargar mi CV.
-                    </a>
-                  </div>
-                </div>
+              <div className={styles.CVCV}>
+            <div className={styles.stackCV}>
+              <button className={styles.btndowload} onClick={handleDownloadClick}>
+                Descargar mi CV
+              </button>
+            </div>
+          </div>
         </div>
         <div className={styles.Skillsdiv}>
-      <Skills  />
-      </div>
-      </section >
+          <Skills />
+        </div>
+      </section>
+      <Modal
+        isOpen={isModalOpen}
+        onRequestClose={() => setIsModalOpen(false)}
+        contentLabel="Seleccionar idioma"
+        className={styles.languageModal}
+      >
+        <h4>Seleccione un idioma:</h4>
+        <button className={styles.languageButton} onClick={() => handleLanguageSelect("es")}>
+          Español
+        </button>
+        <button className={styles.languageButton} onClick={() => handleLanguageSelect("en")}>
+          Inglés
+        </button>
+      </Modal>
       
     </React.Fragment>
   );
