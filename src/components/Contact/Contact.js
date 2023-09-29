@@ -4,6 +4,7 @@ import styles from "./Contact.module.css";
 import HeroSocial from "../HeroSocial/HeroSocial";
 import gmailLogo from "../../image/gmail.png";
 import whatsappLogo from "../../image/logoWhatsap.png";
+import Modal from "react-modal";
 
 const cellPhone =
   "https://api.whatsapp.com/send/?phone=56937735366&text&app_absent=0";
@@ -16,25 +17,30 @@ const Contact = () => {
     message: "",
   });
 
-  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
-     
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-                    
       await axios.post("https://backend-portfolio-production-737e.up.railway.app/externed/contact", formData);
-
-
-      setShowSuccessMessage(true);
+      openModal(); // Abre el modal en caso de éxito
       setFormData({ name: "", email: "", message: "" });
     } catch (error) {
       console.error("Error sending message:", error);
       alert(
-        "Disculpe! en este momento no es posible el envío del mensaje, Puede contactarme directamente a mi correo electronico. Gracias!"
+        "Disculpe! en este momento no es posible el envío del mensaje, Puede contactarme directamente a mi correo electrónico. Gracias!"
       );
     }
   };
@@ -59,7 +65,7 @@ const Contact = () => {
             name="name"
             value={formData.name}
             onChange={handleChange}
-            placeholder="Escribe aqui."
+            placeholder="Escribe aquí."
             required
           />
         </div>
@@ -72,7 +78,7 @@ const Contact = () => {
             name="email"
             value={formData.email}
             onChange={handleChange}
-            placeholder="A este correo electronico te contactaré"
+            placeholder="A este correo electrónico te contactaré"
             required
           />
         </div>
@@ -84,8 +90,9 @@ const Contact = () => {
             name="message"
             value={formData.message}
             onChange={handleChange}
-            placeholder="Cuentame aquí!"
-            required></textarea>
+            placeholder="Cuéntame aquí!"
+            required
+          ></textarea>
         </div>
 
         <button type="submit">Enviar</button>
@@ -93,7 +100,7 @@ const Contact = () => {
         <div className={styles.whatsapp}>
           <HeroSocial
             src={whatsappLogo}
-            alt="phone-Stiker"
+            alt="phone-Sticker"
             title="+56937735366"
             header="WhatsApp"
             href={cellPhone}
@@ -105,7 +112,7 @@ const Contact = () => {
         <div className={styles.gmail}>
           <HeroSocial
             src={gmailLogo}
-            alt="phone-Stiker"
+            alt="phone-Sticker"
             title="wuaicot8@gmail.com"
             header="gmail"
             href={email}
@@ -114,22 +121,20 @@ const Contact = () => {
           />
         </div>
       </form>
-      {showSuccessMessage && (
-        <div className={styles["success-message"]}>
-          Gracias. Su mensaje fue enviado! Pronto me pondré en contacto.{""}
-        </div>
-      )}
 
-     
+      {/* Modal para mostrar el mensaje de éxito */}
+      <Modal
+        isOpen={isModalOpen}
+        onRequestClose={closeModal}
+        contentLabel="Mensaje Enviado"
+        className={styles.successModal}
+      >
+        <h2>Gracias. Su mensaje fue enviado!</h2>
+        <p>Pronto me pondré en contacto 👍</p>
+        <button onClick={closeModal}>Cerrar</button>
+      </Modal>
     </div>
   );
 };
 
 export default Contact;
-
-//await axios.post('http://localhost:5000/externed/contact', formData);
-      //https://backend-portfolio-production-8985.up.railway.app/
-
-
-
-      

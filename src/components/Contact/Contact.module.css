@@ -140,3 +140,41 @@
     
   }
   
+  /* Estilos para el modal */
+.successModal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.successModal h2 {
+  margin-bottom: 10px;
+  padding-top: 14px;
+  color: #70991f;
+}
+
+.successModal p {
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.successModal button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.successModal button:hover {
+  background-color: #0056b3;
+}
