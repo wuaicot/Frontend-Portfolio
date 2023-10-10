@@ -8,6 +8,7 @@ import Modal from "react-modal";
 
 const cellPhone =
   "https://api.whatsapp.com/send/?phone=56937735366&text&app_absent=0";
+  
 const email = "https://mail.google.com/mail/wuaicot8@gmail";
 
 const Contact = () => {
