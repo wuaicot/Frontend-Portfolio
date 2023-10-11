@@ -7,7 +7,7 @@ import whatsappLogo from "../../image/logoWhatsap.png";
 import Modal from "react-modal";
 
 const cellPhone =
-  "https://api.whatsapp.com/send/?phone=56937735366&text&app_absent=0";
+  "https://api.whatsapp.com/send/?phone=56963380684&text&app_absent=0";
   
 const email = "https://mail.google.com/mail/wuaicot8@gmail";
 
@@ -41,7 +41,7 @@ const Contact = () => {
     } catch (error) {
       console.error("Error sending message:", error);
       alert(
-        "Disculpe! en este momento no es posible el envío del mensaje, Puede contactarme directamente a mi correo electrónico. Gracias!"
+        "Excuse me! At this time it is not possible to send the message. You can contact me directly at my email. Thank you!"
       );
     }
   };
@@ -50,16 +50,16 @@ const Contact = () => {
     <div className={styles.container}>
       <div className={styles.Estoy}>
         <h4>
-          "Estoy listo para iniciar un nuevo proyecto y ayudarte a llevar a cabo
-          tu idea"
+          "I am ready to start a new project and help you carry it out
+           your idea"
         </h4>
       </div>
 
-      <h3>Contactame</h3>
+      <h3>Contact me</h3>
 
       <form onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="name">Tu Nombre y Apellido:</label>
+          <label htmlFor="name">Your full name:</label>
           <input
             type="text"
             id="name"
@@ -72,7 +72,7 @@ const Contact = () => {
         </div>
 
         <div>
-          <label htmlFor="email">Tu correo:</label>
+          <label htmlFor="email">Your email:</label>
           <input
             type="email"
             id="email"
@@ -85,7 +85,7 @@ const Contact = () => {
         </div>
 
         <div>
-          <label htmlFor="message">Mensaje:</label>
+          <label htmlFor="message">Message:</label>
           <textarea
             id="message"
             name="message"
@@ -96,13 +96,13 @@ const Contact = () => {
           ></textarea>
         </div>
 
-        <button type="submit">Enviar</button>
+        <button type="submit">Send</button>
         <hr />
         <div className={styles.whatsapp}>
           <HeroSocial
             src={whatsappLogo}
             alt="phone-Sticker"
-            title="+56937735366"
+            title="+56963380684"
             header="WhatsApp"
             href={cellPhone}
             target="_blank"
