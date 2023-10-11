@@ -66,7 +66,7 @@ const Contact = () => {
             name="name"
             value={formData.name}
             onChange={handleChange}
-            placeholder="Escribe aquí."
+            placeholder="Write here."
             required
           />
         </div>
@@ -79,7 +79,7 @@ const Contact = () => {
             name="email"
             value={formData.email}
             onChange={handleChange}
-            placeholder="A este correo electrónico te contactaré"
+            placeholder="I will contact you at this email"
             required
           />
         </div>
@@ -91,7 +91,7 @@ const Contact = () => {
             name="message"
             value={formData.message}
             onChange={handleChange}
-            placeholder="Cuéntame aquí!"
+            placeholder="tell me here!"
             required
           ></textarea>
         </div>
@@ -127,7 +127,7 @@ const Contact = () => {
       <Modal
         isOpen={isModalOpen}
         onRequestClose={closeModal}
-        contentLabel="Mensaje Enviado"
+        contentLabel="Message sent"
         className={styles.successModal}
       >
         <h2>Thank you. Your message has been sent!</h2>
