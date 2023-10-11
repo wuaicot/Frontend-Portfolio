@@ -6,6 +6,7 @@ import Home from './components/Home/Home';
 import About from './components/About/About';
 import Projects from './components/ProjectsCards/ProjectsCards';
 import Contact from './components/Contact/Contact';
+
 import './App.css';
 
 import logo from './logo.svg';

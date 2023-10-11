@@ -40,7 +40,7 @@
   .puedesllam {
     font-size: 24px;
     font-weight: bold;
-    color: #555;
+    color: black;
     text-align: center;
     margin-top: 120px;
   }
@@ -51,7 +51,7 @@
   
   .description {
     font-size: 18px;
-    color: #777;
+    color: #131142;
     line-height: 1.6;
     margin-bottom: 20px;
     
@@ -90,7 +90,7 @@
   .sectionTitle {
     font-size: 24px;
     font-weight: bold;
-    color: #333;
+    
     margin-top: 30px;
     margin-bottom: 10px;
   }
