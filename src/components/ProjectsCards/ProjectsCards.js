@@ -6,25 +6,25 @@ const projects = [
   {
     id: 1,
     title: 'The Literary Corner',
-    description: 'Una "e-comerce" en la que el usuario, amante de los libros y de la literatura podrán elegir entre cientos de libros con la posibilidad de visualizar el detalle, añadir a favoritos, hacer reseñas, agregar al carro de compas, comprar libros y más',
+    description: 'An "e-commerce" in which the user, a lover of books and literature, will be able to choose from hundreds of books with the possibility of viewing the details, adding to favorites, making reviews, adding to the shopping cart, buying books and further',
     deployedUrl: 'https://pf-henry-bookstore.vercel.app/',
   },
   {
     id: 2,
     title: 'Portal Info-Dogs',
-    description: 'Es una SAP (single page application) creada con la finalidad de obtener información de las diversas razas de perros desde una API externa. el usuario puede buscar, filtrar, ordenar y crear su raza de perro.',
+    description: 'It is a SAP (single page application) created with the purpose of obtaining information on the various breeds of dogs from an external API. The user can search, filter, sort and create their dog breed.',
     deployedUrl: 'https://portal-info-dogs.vercel.app/',
   },
   {
     id: 3,
     title: 'Portal Video-Game',
-    description: 'aqui proximamnete podras crear tu colección favorita de videoguegos',
+    description: 'Here soon you will be able to create your favorite collection of video games',
     deployedUrl: 'https://pi-videogames-main-mi-ihac35zgc-wuaicot.vercel.app/',
   },
   {
     id: 4,
     title: 'Proximamente',
-    description: 'aún en desarrollo',
+    description: 'still in developmentt add .',
     deployedUrl: 'http://www.enespera.com',
   }
   // Agrega más proyectos si es necesario
@@ -34,7 +34,7 @@ const ProjectsCards = () => {
   return (
     <div className={styles.container}>
       <div className={styles.adverting}>
-      <h1>Esta sección aún está en desarrollo!</h1>
+      <h1>This section is still in development!</h1>
       </div>
       <div className={styles.cardsContainer}>
         {projects.map((project) => (
@@ -42,7 +42,7 @@ const ProjectsCards = () => {
             <h2>{project.title}</h2>
             <p>{project.description}</p>
             <a href={project.deployedUrl} target="_blank" rel="noopener noreferrer">
-              Ver Proyecto
+            See Project
             </a>
           </div>
         ))}
