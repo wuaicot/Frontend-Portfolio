@@ -91,7 +91,7 @@ const Home = () => {
       <div className={styles.CVCV}>
         <div className={styles.stackCV}>
           <button className={styles.btndowload} onClick={handleDownloadClick}>
-            Descargar mi CV
+          Download my CV
           </button>
         </div>
       </div>
@@ -103,12 +103,12 @@ const Home = () => {
         contentLabel="Seleccionar idioma"
         className={styles.languageModal}
       >
-        <h2>¿ En que idioma desea descargar el CV ?</h2>
+        <h2> "In what language would you like to download the CV?" </h2>
         <button className={styles.languageButton} onClick={() => handleLanguageSelect("es")}>
-          Español
+          Spanish
         </button>
         <button className={styles.languageButton} onClick={() => handleLanguageSelect("en")}>
-          Inglés
+          English
         </button>
       </Modal>
     </section>

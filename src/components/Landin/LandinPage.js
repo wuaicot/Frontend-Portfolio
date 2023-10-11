@@ -23,7 +23,7 @@ const LandinPage = () => {
 
   return (
     <div className={styles.container} style={containerStyle}>
-      <h1 className={styles.acheuno}>Gacias por visitar mi portafolio digital</h1>
+      <h1 className={styles.acheuno}>Thank you for visiting my digital portfolio</h1>
       
       <div className={styles.openS}>
         {/* <p className={styles.tgTr}>¿te invito a ver algunas imagenes de mi galería artistica?</p> */}
