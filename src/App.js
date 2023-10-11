@@ -28,22 +28,22 @@ function App() {
             </li> */}
             <li className="Nav li">
               <NavLink to="/home" className="Nav-link">
-                Presentación
+              Presentation
               </NavLink>
             </li>
             <li className="Nav li">
               <NavLink to="/about" className="Nav-link">
-                Sobre mí
+              About me
               </NavLink>
             </li>
             <li className="Nav li">
               <NavLink to="/projects" className="Nav-link">
-                Experiencia
+                experience
               </NavLink>
             </li>
             <li className="Nav li">
               <NavLink to="/contact" className="Nav-link">
-                Contacto
+                Contact
               </NavLink>
             </li>
           </ul>
