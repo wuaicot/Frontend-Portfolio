@@ -86,7 +86,7 @@ const Contact = () => {
 
         <div>
           <label htmlFor="message">Message:</label>
-          <textarea
+          <textarea 
             id="message"
             name="message"
             value={formData.message}
@@ -139,3 +139,4 @@ const Contact = () => {
 };
 
 export default Contact;
+

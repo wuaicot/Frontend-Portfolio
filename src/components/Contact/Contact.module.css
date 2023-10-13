@@ -31,15 +31,19 @@
     background-color: #4040820c;
     border-radius: 20px;
   }
+
+  
   
   /* Estilos para los campos de entrada del formulario */
   input,
   textarea {
+    
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
     border: 0.5px solid #404082;
     border-radius: 11px;
+    
   }
   
   /* Estilos para el botón de enviar */
@@ -126,15 +130,18 @@
   }
 
   .whatsapp{
-    position: relative;
     margin-top: 10px;
+    display: flex;
      
      
     
     
   }
   .gmail{
-    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -80px;
+    
    
     
     
