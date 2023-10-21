@@ -23,7 +23,7 @@ const projects = [
   },
   {
     id: 4,
-    title: 'Proximamente',
+    title: 'Soon',
     description: 'still in developmentt add .',
     deployedUrl: 'http://www.enespera.com',
   }

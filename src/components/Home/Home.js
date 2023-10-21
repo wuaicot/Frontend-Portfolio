@@ -46,11 +46,14 @@ const Home = () => {
     <section className={styles.seccion}>
       <div className={styles.Hcontainer}>
         <h1 id={styles.titleHome}> NAYCOL RODOLFO LINARES VILLASMIL</h1>
-        <h2 className={styles.tSpan} >FULL STACK WEB DEVELOPER</h2>
-        <h3>          
+        <h2 className={styles.tSpan}>FULL STACK WEB DEVELOPER</h2>
+        <h3>
           <br />
           <span>
-            ReactJS | NodeJS | JavaScript | HTML | CSS | Redux | Express | Postgre-SQL | Bash | GitHub | BootStarp | Tailwind | SCRUM
+            
+              ReactJS | NodeJS | JavaScript | HTML | CSS | Redux | Express |
+              Postgre-SQL | Bash | GitHub | BootStarp | Tailwind | SCRUM
+                       
           </span>
         </h3>
         <br />
@@ -86,12 +89,15 @@ const Home = () => {
         />
       </div>
 
-      <br/><br/><br/><br/>
+      <br />
+      <br />
+      <br />
+      <br />
 
       <div className={styles.CVCV}>
         <div className={styles.stackCV}>
           <button className={styles.btndowload} onClick={handleDownloadClick}>
-          Download my CV
+            Download my CV
           </button>
         </div>
       </div>
@@ -101,13 +107,16 @@ const Home = () => {
         isOpen={isModalOpen}
         onRequestClose={() => setIsModalOpen(false)}
         contentLabel="Seleccionar idioma"
-        className={styles.languageModal}
-      >
+        className={styles.languageModal}>
         <h2> "In what language would you like to download the CV?" </h2>
-        <button className={styles.languageButton} onClick={() => handleLanguageSelect("es")}>
+        <button
+          className={styles.languageButton}
+          onClick={() => handleLanguageSelect("es")}>
           Spanish
         </button>
-        <button className={styles.languageButton} onClick={() => handleLanguageSelect("en")}>
+        <button
+          className={styles.languageButton}
+          onClick={() => handleLanguageSelect("en")}>
           English
         </button>
       </Modal>
