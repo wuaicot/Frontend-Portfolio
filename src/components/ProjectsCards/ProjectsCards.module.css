@@ -1,6 +1,6 @@
 .container {
   max-width: 100%;
-  padding: 12px;
+  padding: -12px;
   text-align: center;
   background-color: #ebe9e5;
 }
@@ -41,7 +41,7 @@
 }
 
 h1 {
-  color: rgb(76, 2, 2);
+  color: red;
   margin-top: 30px; /* Añadido espacio en la parte superior */
 }
 
@@ -49,11 +49,11 @@ h1 {
   border: 1.5px solid #9a9a9a;
   border-radius: 20px;
   border-style: groove;
-  padding: 10px;
+  padding: 37px;
   margin: 10px;
   max-width: 300px;
-  box-shadow: 0px 0px 0px 1px #0056b3;
-  flex: 1; /* Para que las tarjetas se expandan en el contenedor */
+  box-shadow: 0px 0px 0px 2px #0056b3;
+  flex: grid; /* Para que las tarjetas se expandan en el contenedor */
 }
 
 .card h2 {
