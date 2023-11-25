@@ -7,7 +7,7 @@ import whatsappLogo from "../../image/logoWhatsap.png";
 import Modal from "react-modal";
 
 const cellPhone =
-  "https://api.whatsapp.com/send/?phone=56963380684&text&app_absent=0";
+  "https://api.whatsapp.com/send/?phone=56937735366&text&app_absent=0";
   
 const email = "https://mail.google.com/mail/wuaicot8@gmail";
 
@@ -35,7 +35,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("https://backend-portfolio-production-737e.up.railway.app/externed/contact", formData);
+      await axios.post("http://localhost:5000/externed/contact", formData);
       openModal(); // Abre el modal en caso de éxito
       setFormData({ name: "", email: "", message: "" });
     } catch (error) {
