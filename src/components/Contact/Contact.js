@@ -32,6 +32,10 @@ const Contact = () => {
     setIsModalOpen(false);
   };
 
+        //https://backend-portfolio-production-c573.up.railway.app/externed/contact
+
+          //http://localhost:5000
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {

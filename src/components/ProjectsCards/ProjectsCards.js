@@ -34,7 +34,7 @@ const ProjectsCards = () => {
   return (
     <div className={styles.container}>
       <div className={styles.adverting}>
-      <h1>This section is still in development!</h1>
+      <h1>These are some of my personal projects.</h1>
       </div>
       <div className={styles.cardsContainer}>
         {projects.map((project) => (

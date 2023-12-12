@@ -14,23 +14,6 @@
 
 
 
-@keyframes shakeAnimation {
-  50% {
-    transform: translateX(0);
-  }
-  0% {
-    transform: translateX(-5px);
-  }
-  20% {
-    transform: translateX(5px);
-  }
-  0% {
-    transform: translateX(-5px);
-  }
-  50% {
-    transform: translateX(0);
-  }
-}
 
 .cardsContainer {
   display: flex;
@@ -40,10 +23,7 @@
   padding: 20px;
 }
 
-h1 {
-  color: red;
-  margin-top: 30px; /* Añadido espacio en la parte superior */
-}
+
 
 .card {
   border: 1.5px solid #9a9a9a;
