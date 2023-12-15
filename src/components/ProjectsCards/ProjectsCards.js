@@ -24,8 +24,15 @@ const projects = [
   {
     id: 4,
     title: 'Lubridol',
-    description: 'still in developmentt add .',
+    description: 'Un producto natural para el dolor en las articulaciones',
     deployedUrl: 'https://lubridol.vercel.app/',
+  },
+  {
+    id: 5,
+    title: 'Soon',    
+    description: 'still in developmentt add .',
+    deployedUrl: 'http://www.enespera.com',
+    
   }
   // Agrega más proyectos si es necesario
 ];
