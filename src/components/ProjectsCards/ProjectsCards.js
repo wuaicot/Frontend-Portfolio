@@ -23,9 +23,9 @@ const projects = [
   },
   {
     id: 4,
-    title: 'Soon',
+    title: 'Lubridol',
     description: 'still in developmentt add .',
-    deployedUrl: 'http://www.enespera.com',
+    deployedUrl: 'https://lubridol.vercel.app/',
   }
   // Agrega más proyectos si es necesario
 ];
