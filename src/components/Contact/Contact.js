@@ -7,7 +7,7 @@ import whatsappLogo from "../../image/logoWhatsap.png";
 import Modal from "react-modal";
 
 const cellPhone =
-  "https://api.whatsapp.com/send/?phone=56937735366&text&app_absent=0";
+  "https://api.whatsapp.com/send/?phone=5693380684&text&app_absent=0";
   
 const email = "https://mail.google.com/mail/wuaicot8@gmail";
 
