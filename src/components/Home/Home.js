@@ -5,8 +5,8 @@ import logoLinkedin from "../../image/linkedin-logo-512.png";
 import logoTwitter from "../../image/logoX-cuadrado512.jpg";
 import logoOutlook from "../../image/OutLook.png";
 import HeroSocial from "../HeroSocial/HeroSocial";
-import CV from "../../cv/Naycol Linares (Es)";
-import CV_EN from "../../cv/Naycol Linares (En)";
+import CV from "../../cv/Naycol_Linares_Es";
+import CV_EN from "../../cv/Naycol_Linares_En";
 import Modal from "react-modal";
 
 const gihubLink = "https://github.com/wuaicot";
