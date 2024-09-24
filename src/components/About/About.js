@@ -46,56 +46,79 @@ const About = () => {
 
           {/* <h1 className={styles.aboutTittle}>Sobre Mí</h1> */}
           <p className={styles.puedesllam}>
-             Hello, you can call me Rodolfo.
+            Hola Mundo👋 te cuento en breve...
           </p>
           <p className={styles.description}>
-          I am an enthusiast of effective digital education, fast learning, and personal and professional growth. I enjoy creating digital products, specializing in frontend and backend. Valuing communication and teamwork, I always seek new challenges and easily adapt to changes. Open to learning new technologies and programming languages. 💻
-          </p>
-          <p  className={styles.description}>
-          Communication and teamwork are essential for me to grow as a developer. I am proactive and methodical, always looking for new challenges and easily adapting to changes, I am open to learning new technologies and languages.
+          Soy un entusiasta de la educación digital efectiva, el aprendizaje rápido y el crecimiento personal y profesional. Disfruto creando productos digitales, especializándome en frontend y backend. Valorando la comunicación y el trabajo en equipo, siempre busco nuevos retos y me adapto fácilmente a los cambios. Abierto al aprendizaje de nuevas tecnologías y lenguajes de programación. 💻
           </p>
           <p className={styles.description}>
-          ✅ Technologies: HTML, CSS, JavaScript, React JS/React Native, Next JS, Redux JS, TypeScript, Bootstrap, Less, Node JS, Nest JS, Express, SQL, PostgreSQL, Sequelize, JsonWebToken, Figma, Git & GitHub.
+          La comunicación y el trabajo en equipo son esenciales para crecer como desarrollador. Soy proactivo y metódico, siempre buscando nuevos retos y adaptándome fácilmente a los cambios.
           </p>
-          <hr className={styles.aboutcenter}/>
-           <h2 className={styles.aboutme}>
+          <p className={styles.description}>
+            ✅ Tecnologías: <li>HTML</li> 
+            <li>CSS</li> 
+            <li>JavaScript</li>
+             <li>React JS</li>
+              <li>ReactNative</li> 
+               <li>Next JS</li>
+                <li>Redux JS</li>
+                 <li>TypeScript</li>
+                  <li>Bootstrap</li>
+                   <li>Node JS</li> 
+                    <li>Express</li> 
+                    <li>SQL</li>
+                    <li>Postgre-SQL</li> 
+                     <li>JsonWebToken</li>
+                      <li>Git & GitHub</li>
+          </p>
+          <hr className={styles.aboutcenter} />
+          <h2 className={styles.aboutme}>
             <div className={styles.descriptionCent}>
               <span  >
-              What can I do?
-             </span>
-             </div>
-             
-           </h2>
-            <br/>
-            <div>
+                Que Se Hacer?
+              </span>
+            </div>
+
+          </h2>
+          
+          <div>
             <h3 className={styles.descriptionCent}>
               Front_End
-             </h3>
-            </div>
-             
-             <p className={styles.description}>
-             As a frontend developer, I have experience handling HTML, CSS and JavaScript as well as frameworks and libraries, especially React JS. I can style, create reactive, logical components and bring them to life.
-              </p>
-              <p className={styles.description}>
-              My favorite project in this regard would be “Portal Info-Dogs”. It is a SAP (single page application) created with the purpose of obtaining information on various dog breeds from an external API. The user can search, filter, sort and create their dog breed.
-              </p>
-              <p className={styles.description}>
-              Skills: Software development · Sequelize.js · Website update · Version control · Next.js · Visual Studio · User interface design · Content filter
-              </p>
-              <h3 className={styles.descriptionCent}>
-              Back-End
-             </h3>
-             <p className={styles.description}>
-             My favorite project in this regard would be “The Literary Corner”, it is an e-commerce site which connected with backend allows the user to visualize all the existing books on the page to render them in a series of cards. It allows you to search for them by name, as well as being able to filter and sort them through predefined classifications. The interface gives us the possibility through a controlled form to create new books with attributes defined by the user “Admin”, these are saved in a database. Also with the possibility of viewing the detail, adding to favorites, making reviews, adding to the shopping cart, buying books as it has a payment gateway, registering as a user, editing your profile information and more.            
-              </p>
-              <p className={styles.description}>
-              This app makes use of the React-Redux library to handle global states in it, in addition to the local states of each component in React. It has different sections managed by routes, on which I take advantage of the features of React to reuse components. The technologies I used were HTML, CSS, JavaScript, React JS, React-Redux, Node JS, Express, PostgreSQL, Sequelize, Git/Github.           
-              </p>
-              <hr/>
-              <div className={styles.CVCV}>
+            </h3>
+          </div>
+
+          <p className={styles.description}>
+          Como desarrollador frontend, tengo experiencia en el manejo de HTML, CSS y JavaScript, así como frameworks y librerías, especialmente React JS. Puedo diseñar, crear componentes reactivos y lógicos y darles vida.
+          </p>
+          <p className={styles.description}>
+          Mi proyecto favorito es "Portal Info-Dogs". Se trata de una SAP (aplicación de página única) creada con el propósito de obtener información sobre diversas razas de perros a partir de una API externa. El usuario puede buscar, filtrar, clasificar y crear su raza de perro.
+          </p>
+          <p className={styles.description}>
+            Habilidades: <li> Software development</li>  
+            <li>Sequelize.js</li> 
+             <li>Website update</li>
+              <li> Version control</li> 
+               <li>Next.js</li> 
+                <li>Visual Studio</li>
+                 <li> User interface design</li>
+                  <li>Content filter</li> 
+          </p>
+          <hr/>
+          <h3 className={styles.descriptionCent}>
+            Back-End
+          </h3> 
+          <p className={styles.description}>
+          Mi proyecto favorito es "The Literary Corner", es un sitio de comercio electrónico que conectado con el backend permite al usuario visualizar todos los libros existentes en la página para renderizarlos en una serie de tarjetas. Permite buscarlos por nombre, además de poder filtrarlos y ordenarlos a través de clasificaciones predefinidas. La interfaz nos da la posibilidad a través de un formulario controlado de crear nuevos libros con atributos definidos por el usuario "Admin", estos se guardan en una base de datos. También con la posibilidad de ver el detalle, añadir a favoritos, hacer reseñas, añadir al carrito de la compra, comprar libros ya que tiene pasarela de pago, registrarse como usuario, editar la información de tu perfil y mucho más.
+
+          </p>
+          <p className={styles.description}>
+          Esta aplicación hace uso de la biblioteca React-Redux para manejar los estados globales en ella, además de los estados locales de cada componente en React. Cuenta con diferentes tramos gestionados por rutas, en las que aprovecho las funcionalidades de React para reutilizar componentes. Las tecnologías que utilicé fueron: <li>HTML</li> <li>CSS</li> <li>JavaScript</li> <li>React JS</li> <li>React-Redux</li> <li>Node JS</li> <li>Express</li> <li>PostgreSQL</li> <li>Sequelize</li> <li>Git/Github</li>
+          </p>
+          <hr />
+          <div className={styles.CVCV}>
             <div className={styles.stackCV}>
               <button className={styles.btndowload} onClick={handleDownloadClick}>
-              Download my CV
+                Descargar mi CV
               </button>
             </div>
           </div>
@@ -118,7 +141,7 @@ const About = () => {
           English
         </button>
       </Modal>
-      
+
     </React.Fragment>
   );
 };

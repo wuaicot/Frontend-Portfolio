@@ -55,53 +55,53 @@ const Contact = () => {
     <div className={styles.container}>
       <div className={styles.Estoy}>
         <h4>
-          "I am ready to start a new project and help you carry it out
-           your idea"
+          "Estoy listo para comenzar un nuevo proyecto y ayudarte a llevar a cabo
+          Tu idea 😊"
         </h4>
       </div>
 
-      <h3>Contact me</h3>
+      <h3>Contactame</h3>
 
       <form onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="name">Your full name:</label>
+          <label htmlFor="name">tu nombre completo:</label>
           <input
             type="text"
             id="name"
             name="name"
             value={formData.name}
             onChange={handleChange}
-            placeholder="Write here."
+            placeholder="escribe aquí."
             required
           />
         </div>
 
         <div>
-          <label htmlFor="email">Your email:</label>
+          <label htmlFor="email">tu email de contacto:</label>
           <input
             type="email"
             id="email"
             name="email"
             value={formData.email}
             onChange={handleChange}
-            placeholder="I will contact you at this email"
+            placeholder="te contactaré a este email"
             required
           />
         </div>
 
         <div>
-          <label htmlFor="message">Message:</label>
+          <label htmlFor="message">tu mensaje:</label>
           <textarea 
             id="message"
             name="message"
             value={formData.message}
             onChange={handleChange}
-            placeholder="tell me here!"
+            placeholder="📒"
             required
           ></textarea>
         </div>
 
-        <button type="submit">Send</button>
+        <button type="submit">Enviar</button>
         <hr />
         <div className={styles.whatsapp}>
           <HeroSocial
