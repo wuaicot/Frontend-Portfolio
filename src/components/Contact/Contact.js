@@ -56,7 +56,7 @@ const Contact = () => {
       <div className={styles.Estoy}>
         <h4>
           "Estoy listo para comenzar un nuevo proyecto y ayudarte a llevar a cabo
-          Tu idea 😊"
+          Tu idea  <span role="img" aria-label="cara sonriente">😊</span>"
         </h4>
       </div>
 
@@ -136,7 +136,7 @@ const Contact = () => {
         className={styles.successModal}
       >
         <h2>Thank you. Your message has been sent!</h2>
-        <p>I will contact you soon👍</p>
+        <p>I will contact you soon</p>
         <button onClick={closeModal}>Close</button>
       </Modal>
     </div>

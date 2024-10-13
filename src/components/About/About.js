@@ -46,16 +46,17 @@ const About = () => {
 
           {/* <h1 className={styles.aboutTittle}>Sobre Mí</h1> */}
           <p className={styles.puedesllam}>
-            Hola Mundo👋 te cuento en breve...
+            Hola Mundo
+            te cuento en breve...
           </p>
           <p className={styles.description}>
-          Soy un entusiasta de la educación digital efectiva, el aprendizaje rápido y el crecimiento personal y profesional. Disfruto creando productos digitales, especializándome en frontend y backend. Valorando la comunicación y el trabajo en equipo, siempre busco nuevos retos y me adapto fácilmente a los cambios. Abierto al aprendizaje de nuevas tecnologías y lenguajes de programación. 💻
+          Soy un entusiasta de la educación digital efectiva, el aprendizaje rápido y el crecimiento personal y profesional. Disfruto creando productos digitales, especializándome en frontend y backend. Valorando la comunicación y el trabajo en equipo, siempre busco nuevos retos y me adapto fácilmente a los cambios. Abierto al aprendizaje de nuevas tecnologías y lenguajes de programación. <span role="img" aria-label="computadora portátil">💻</span>
           </p>
           <p className={styles.description}>
           La comunicación y el trabajo en equipo son esenciales para crecer como desarrollador. Soy proactivo y metódico, siempre buscando nuevos retos y adaptándome fácilmente a los cambios.
           </p>
           <p className={styles.description}>
-            ✅ Tecnologías: <li>HTML</li> 
+           Tecnologías: <li>HTML</li> 
             <li>CSS</li> 
             <li>JavaScript</li>
              <li>React JS</li>
