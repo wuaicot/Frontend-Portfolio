@@ -39,7 +39,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("https://backend-portfolio-production-c573.up.railway.app/", formData);
+      await axios.post("https://backend-portfolio-production-c573.up.railway.app", formData);
 
 
 
