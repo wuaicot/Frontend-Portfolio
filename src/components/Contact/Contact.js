@@ -34,12 +34,12 @@ const Contact = () => {
 
         //https://backend-portfolio-production-c573.up.railway.app/externed/contact
 
-          //http://localhost:5000
+          //http://localhost:3001/externed/contact
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:3001/externed/contact", formData);
+      await axios.post("https://backend-portfolio-production-c573.up.railway.app/externed/contact", formData);
 
       openModal(); // Abre el modal en caso de éxito
       setFormData({ name: "", email: "", message: "" });
