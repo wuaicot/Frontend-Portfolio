@@ -47,7 +47,7 @@ const Contact = () => {
     } catch (error) {
       console.error("Error sending message:", error);
       alert(
-        "Excuse me! At this time it is not possible to send the message. You can contact me directly at my email. Thank you!"
+        "¡Disculpa! En este momento no es posible enviar el mensaje. Puedes contactarme directamente en mi correo electrónico o Whatsapp. ¡Gracias!"
       );
     }
   };
