@@ -41,6 +41,7 @@ const Contact = () => {
     try {
       await axios.post("https://backend-portfolio-production-c573.up.railway.app/externed/contact", formData);
 
+
       openModal(); // Abre el modal en caso de éxito
       setFormData({ name: "", email: "", message: "" });
     } catch (error) {
