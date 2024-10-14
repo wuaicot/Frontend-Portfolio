@@ -1,62 +1,149 @@
-const express = require('express'); // Asegúrate de importar express
-const router = express.Router(); // Asegúrate de que estás definiendo el router
-const nodemailer = require('nodemailer');
-const { google } = require('googleapis');
-const { OAuth2 } = google.auth;
-const ContactMessage = require('./models/ContactMessage');
-require('dotenv').config();
+import React, { useState } from "react";
+import axios from "axios";
+import styles from "./Contact.module.css";
+import HeroSocial from "../HeroSocial/HeroSocial";
+import gmailLogo from "../../image/gmail.png";
+import whatsappLogo from "../../image/logoWhatsap.png";
+import Modal from "react-modal";
 
-// Función para enviar correo electrónico
-const sendEmail = async (name, email, message) => {
-  try {
-    const transporter = nodemailer.createTransport({
-      service: 'gmail',
-      auth: {
-        type: 'OAuth2',
-        user: process.env.EMAIL_USER,
-        clientId: process.env.CLIENT_ID,
-        clientSecret: process.env.CLIENT_SECRET,
-        refreshToken: process.env.REFRESH_TOKEN,
-      },
-    });
+const cellPhone =
+  "https://api.whatsapp.com/send/?phone=5693380684&text&app_absent=0";
+  
+const email = "https://mail.google.com/mail/wuaicot8@gmail";
 
-    // Envía el correo electrónico
-    await transporter.sendMail({
-      from: process.env.EMAIL_USER,
-      to: email,
-      subject: 'Mensaje recibido',
-      text: `Hola ${name},\n\nGracias por contactarme. Su solicitud será revisada y me pondré en contacto con usted.\n\nMensaje: ${message}`,
-    });
+const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
 
-    console.log('Correo enviado correctamente.');
-  } catch (error) {
-    console.error('Error al enviar el correo:', error);
-    throw new Error('Error al enviar el correo');
-  }
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
+        //https://backend-portfolio-production-c573.up.railway.app/externed/contact
+
+          //http://localhost:3001/externed/contact
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      await axios.post("https://backend-portfolio-production-c573.up.railway.app/externed/contact", formData);
+
+
+
+      openModal(); // Abre el modal en caso de éxito
+      setFormData({ name: "", email: "", message: "" });
+    } catch (error) {
+      console.error("Error sending message:", error);
+      alert(
+        "¡Disculpa! En este momento no es posible enviar el mensaje. Puedes contactarme directamente en mi correo electrónico o Whatsapp. ¡Gracias!"
+      );
+    }
+  };
+
+  return (
+    <div className={styles.container}>
+      <div className={styles.Estoy}>
+        <h4>
+          "Estoy listo para comenzar un nuevo proyecto y ayudarte a llevar a cabo
+          Tu idea  <span role="img" aria-label="cara sonriente">😊</span>"
+        </h4>
+      </div>
+
+      <h3>Contactame</h3>
+
+      <form onSubmit={handleSubmit}>
+        <div>
+          <label htmlFor="name">tu nombre completo:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            placeholder="escribe aquí."
+            required
+          />
+        </div>
+
+        <div>
+          <label htmlFor="email">tu email de contacto:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            placeholder="te contactaré a este email"
+            required
+          />
+        </div>
+
+        <div>
+          <label htmlFor="message">tu mensaje:</label>
+          <textarea 
+            id="message"
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
+            placeholder="📒"
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit">Enviar</button>
+        <hr />
+        <div className={styles.whatsapp}>
+          <HeroSocial
+            src={whatsappLogo}
+            alt="phone-Sticker"
+            title="+56963380684"
+            header="WhatsApp"
+            href={cellPhone}
+            target="_blank"
+            linkName="Enlace al Chat"
+          />
+        </div>
+
+        <div className={styles.gmail}>
+          <HeroSocial
+            src={gmailLogo}
+            alt="phone-Sticker"
+            title="wuaicot8@gmail.com"
+            header="gmail"
+            href={email}
+            target="_blank"
+            linkName="wuaicot8@gmail.com"
+          />
+        </div>
+      </form>
+
+      {/* Modal para mostrar el mensaje de éxito */}
+      <Modal
+        isOpen={isModalOpen}
+        onRequestClose={closeModal}
+        contentLabel="Message sent"
+        className={styles.successModal}
+      >
+        <h2>Thank you. Your message has been sent!</h2>
+        <p>I will contact you soon</p>
+        <button onClick={closeModal}>Close</button>
+      </Modal>
+    </div>
+  );
 };
 
-// Ruta POST para recibir y manejar el formulario de contacto
-router.post('/contact', async (req, res) => {
-  try {
-    const { name, email, message } = req.body;
+export default Contact;
 
-    // Validar los datos del formulario
-    if (!name || !email || !message) {
-      return res.status(400).json({ message: 'Por favor, rellene todos los campos.' });
-    }
-
-    // Crear un nuevo registro en la base de datos
-    const newContactMessage = await ContactMessage.create(name, email, message);
-
-    // Enviar correo electrónico
-    await sendEmail(name, email, message);
-
-    // Responder con un mensaje de éxito
-    res.status(200).json({ message: '¡Mensaje recibido exitosamente! Verifica tu correo electrónico para la confirmación.' });
-  } catch (error) {
-    console.error('Error enviando el mensaje:', error);
-    res.status(500).json({ message: 'Error enviando el mensaje. Por favor, inténtelo de nuevo más tarde.' });
-  }
-});
-
-module.exports = router;
