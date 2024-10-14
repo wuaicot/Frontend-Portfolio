@@ -39,7 +39,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000", formData);
+      await axios.post("http://localhost:3001/externed/contact", formData);
 
       openModal(); // Abre el modal en caso de éxito
       setFormData({ name: "", email: "", message: "" });
