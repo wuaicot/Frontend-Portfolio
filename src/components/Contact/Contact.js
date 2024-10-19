@@ -6,7 +6,7 @@ import gmailLogo from "../../image/gmail.png";
 import whatsappLogo from "../../image/logoWhatsap.png";
 import Modal from "react-modal";
 
-Modal.setAppElement('#root');
+   Modal.setAppElement('#root');
 
 const cellPhone =
   "https://api.whatsapp.com/send/?phone=5693380684&text&app_absent=0";
