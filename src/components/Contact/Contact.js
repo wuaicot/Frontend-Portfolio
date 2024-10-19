@@ -6,10 +6,12 @@ import gmailLogo from "../../image/gmail.png";
 import whatsappLogo from "../../image/logoWhatsap.png";
 import Modal from "react-modal";
 
+Modal.setAppElement('#root');
+
 const cellPhone =
   "https://api.whatsapp.com/send/?phone=5693380684&text&app_absent=0";
   
-const email = "https://mail.google.com/mail/wuaicot8@gmail";
+const email = "https://mail.google.com/mail/wuaicot8@gmail.com";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -32,26 +34,25 @@ const Contact = () => {
     setIsModalOpen(false);
   };
 
-        //https://backend-portfolio-production-c573.up.railway.app/externed/contact
-
-          //http://localhost:3001/externed/contact
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("https://backend-portfolio-production-c573.up.railway.app", formData);
-
-
-
+      const response = await axios.post("http://localhost:3001/externed/contact", formData);
+      console.log('Respuesta del servidor:', response.data); // Asegúrate de que la respuesta se reciba correctamente
       openModal(); // Abre el modal en caso de éxito
       setFormData({ name: "", email: "", message: "" });
     } catch (error) {
       console.error("Error sending message:", error);
-      alert(
-        "¡Disculpa! En este momento no es posible enviar el mensaje. Puedes contactarme directamente en mi correo electrónico o Whatsapp. ¡Gracias!"
-      );
+      if (error.response && error.response.status !== 500) {
+        alert(
+          "¡Disculpa! En este momento no es posible enviar el mensaje. Puedes contactarme directamente en mi correo electrónico o Whatsapp. ¡Gracias!"
+        );
+      } else {
+        console.error("Error en el servidor: ", error); // Imprimir el error del servidor en la consola
+      }
     }
   };
+  
 
   return (
     <div className={styles.container}>
@@ -146,4 +147,5 @@ const Contact = () => {
 };
 
 export default Contact;
+
 
