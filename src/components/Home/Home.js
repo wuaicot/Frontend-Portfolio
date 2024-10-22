@@ -48,7 +48,7 @@ const Home = () => {
         <h1 id={styles.titleHome}> NAYCOL RODOLFO LINARES VILLASMIL</h1>
         <h2 className={styles.tSpan}>FULL STACK WEB DEVELOPER</h2>
          <hr/>
-        <h3>
+        <h4>
           
           <span>
             
@@ -56,7 +56,7 @@ const Home = () => {
               Postgre-SQL | Bash | GitHub | BootStarp | Tailwind | SCRUM
                        
           </span>
-        </h3>
+        </h4>
         
 
         <HeroSocial

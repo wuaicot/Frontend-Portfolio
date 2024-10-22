@@ -99,9 +99,12 @@ img{
   background-color: #04fad5; /* Cambia el color de fondo al pasar el mouse por encima */
 }
 
-h3{
+h4{
   padding: 0; 
-
+  margin-left: 5px;
+  justify-content: center;
+  align-content: center;
+  
  }
   
  
