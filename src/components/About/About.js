@@ -45,7 +45,7 @@ const About = () => {
           />
 
           {/* <h1 className={styles.aboutTittle}>Sobre Mí</h1> */}
-          <p className={styles.puedesllam}>
+          <p className={styles.Holamundo}>
             Hola Mundo <span role="img" aria-label="hi">👋</span>
             
           </p>
