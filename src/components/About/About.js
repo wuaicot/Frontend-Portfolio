@@ -6,9 +6,18 @@ import Modal from "react-modal"; // Importa react-modal
 import CV from "../../cv/Naycol_Linares_CV.pdf";
 import CV_EN from "../../cv/Naycol_Linares_CVe.pdf";
 
+// import { useInView } from 'react-intersection-observer';
+
+      // Importar Material-UI      
+import { Fab } from "@mui/material";
+import { KeyboardArrowUp } from "@mui/icons-material"; // Ícono de flecha hacia arriba
+
+
 const About = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [showScrollTopButton, setShowScrollTopButton] = useState(false);
 
+  // Función para manejar el scroll al inicio
   const handleScrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -16,9 +25,30 @@ const About = () => {
     });
   };
 
+
+
+
+
+
+
+
+    // Detectar el scroll
   useEffect(() => {
-    handleScrollToTop();
+    const handleScroll = () => {
+      if (window.scrollY > 300) {
+        setShowScrollTopButton(true);  // Mostrar botón cuando el usuario baja 300px
+      } else {
+        setShowScrollTopButton(false); // Esconder botón si está al inicio
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  // Detectar el final de la página
+  
+
 
   const handleDownloadClick = () => {
     setIsModalOpen(true);
@@ -46,7 +76,7 @@ const About = () => {
 
           {/* <h1 className={styles.aboutTittle}>Sobre Mí</h1> */}
           <p className={styles.Holamundo}>
-            Hola Mundo <span role="img" aria-label="hi">👋</span>
+            <strong>¡Hola Mundo</strong> <span role="img" aria-label="hi">👋!</span>
             
           </p>
           <p className={styles.description}>
@@ -124,8 +154,29 @@ const About = () => {
             </div>
           </div>
         </div>
+
+{/* Botón flotante de scroll hacia arriba */}
+{showScrollTopButton && (
+            <Fab
+              color="primary"
+              size="medium"
+              onClick={handleScrollToTop}
+              style={{
+                position: "fixed",
+                bottom: 20,
+                right: 20,
+                zIndex: 1000,  // Asegúrate de que esté por encima de otros elementos
+              }}
+            >
+              <KeyboardArrowUp />
+            </Fab>
+          )}
+
         <div className={styles.Skillsdiv}>
           <Skills />
+
+        
+
         </div>
       </section>
       <Modal
@@ -142,6 +193,8 @@ const About = () => {
           English
         </button>
       </Modal>
+
+       
 
     </React.Fragment>
   );

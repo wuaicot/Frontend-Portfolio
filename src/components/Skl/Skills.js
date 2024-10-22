@@ -11,8 +11,8 @@ import expressStiker from "../../image/express.png";
 import typescriptStiker from "../../image/typescript-programming-language.svg";
 import mongodbtStiker from "../../image/mongo.png";
 import reduxStiker from "../../image/redux.svg";
-//  import psqlStiker from "../../image/postgresql-icon.svg";
-// import sequelizeStiker from "../../image/sequelizejs-icon.svg";
+//   import psqlStiker from "../../image/postgresql-icon.svg";
+//  import sequelizeStiker from "../../image/sequelizejs-icon.svg";
 import bootstrapStiker from "../../image/bootstrap-5-1.svg";
 import sassStiker from "../../image/sass-1.svg";
 import nextStiker from "../../image/next-js.svg";
@@ -34,115 +34,115 @@ const Skills = () => {
                 <div className={styles.skillsIcons}>
                     
                     <Skill
-                    skill="HTML"
+                    skill=""
                     src={htmlStiker}
                     title="HTML"
                     alt="html-logo"
                    />
                    <Skill 
-                   skill="CSS" 
+                   skill="" 
                    src={cssStiker} 
                    title="CSS" 
                    alt="css-logo" 
                    />
                    <Skill
-                     skill="JavaScript"
+                     skill=""
                      src={javascriptStiker}
                      title="JavaScript"
                      alt="javascript-logo"
                    />
                    <Skill
-                    skill="Figma"
+                    skill=""
                     src={figmaStiker}
                      title="Figma"
                      alt="figma-logo"
                     />
                     <Skill
-                    skill="React"
+                    skill=""
                     src={reactStiker}
                     title="React Js - React Native"
                     alt="react-logo"
                    />
                    <Skill 
-                   skill="Git" 
+                   skill="" 
                    src={gitStiker} 
                     title="Git" 
                    alt="git-logo" 
                   />
                     <Skill
-                    skill="Node"
+                    skill=""
                      src={nodeStiker}
                      title="Node Js"
                      alt="node-logo"
                    />
                    <Skill
-                   skill="Express"
+                   skill=""
                    src={expressStiker}
                    title="Express Js"
                    alt="express-logo"
                   />
                   <Skill
-                skill="TypeScript"
+                skill=""
                 src={typescriptStiker}
                 title="TypeScript"
                 alt="typescript-logo"
               />
               <Skill
-                skill="MongoDB"
+                skill=""
                 src={mongodbtStiker}
                 title="MongoDB"
                 alt="mongodb-leaf-logo"
               />
                <Skill
-                skill="Redux"
+                skill=""
                 src={reduxStiker}
                 title="Redux"
                 alt="rexu-logo"
               />
               {/* <Skill
-                skill="Postgresql"
+                skill=""
                 src={psqlStiker}
                 title="PostgreSQL"
                 alt="psql-logo"
               />
               <Skill
-                skill="Sequelize"
+                skill=""
                 src={sequelizeStiker}
                 title="Sequelize"
                 alt="sequelize-logo"
               /> */}
               <Skill
-                skill="bootstrap"
+                skill=""
                 src={bootstrapStiker}
                 title="Bootstrap"
                 alt="bootstrap-logo"
               />
               <Skill
-                skill="sass"
+                skill=""
                 src={sassStiker}
                 title="Sass"
                 alt="sass-logo"
               />
               <Skill
-                skill="Next"
+                skill=""
                 src={nextStiker}
                 title="Next Js"
                 alt="next-logo"
               />
               <Skill
-                skill="GraphQL"
+                skill=""
                 src={grapgqlStiker}
                 title="GraphQL"
                 alt="graphql-logo"
               />
               <Skill
-                skill="MUI"
+                skill=""
                 src={materialStiker}
                 title="Material-UI"
                 alt="material-ui-logo"
               />
                 <Skill
-                skill="Vue"
+                skill=""
                 src={vueStiker}
                 title="Vue Js"
                 alt="vue-logo"
