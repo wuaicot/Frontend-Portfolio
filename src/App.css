@@ -1,6 +1,6 @@
 .App {
  
-  text-align: center;
+  text-align:center;
   
 }
 
@@ -12,7 +12,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 5s linear;
+    animation: App-logo-spin infinite 7s linear;
   }
 }
 
@@ -58,14 +58,56 @@
   
 }
 
+/* Estilos generales para pantallas grandes */
 .Nav ul {
-  
   margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
   
+  justify-content:space-between;
 }
+
+/* Estilos para dispositivos móviles en vista vertical */
+@media (max-width: 495px) and (orientation: portrait) {
+  .Nav ul {
+    
+    flex-direction:column; /* Cambia la dirección a vertical */
+    align-items: center; /* Centra los elementos en el eje horizontal */
+    justify-content: space-around;
+    
+  }
+
+  .Nav ul li {
+    margin-bottom: -20px; /* Añade espacio entre los elementos */
+  }
+
+  .Nav ul li a {
+    display: block;
+    padding: 10px;
+    width: 100%; /* Los enlaces ocupan todo el ancho */
+    text-align: center; /* Centra el texto */
+  }
+}
+
+/* Estilos para dispositivos móviles en vista horizontal */
+@media (max-width: 768px) and (orientation: landscape) {
+  .Nav ul {
+    flex-direction: row; /* Cambia la dirección a horizontal */
+    justify-content: space-around; /* Distribuye los elementos uniformemente */
+  }
+
+  .Nav ul li {
+    margin-bottom: 0; /* Elimina el margen inferior en horizontal */
+  }
+
+  .Nav ul li a {
+    padding: 10px 15px; /* Añade algo de padding */
+    width: auto; /* Deja que los enlaces ocupen el ancho necesario */
+    text-align: left; /* Alinea el texto a la izquierda */
+  }
+}
+
  /* prueva
 .Nav-link{
   
@@ -98,7 +140,7 @@
 }
 
 .Nav li a.active {
-  background-color: #61dafb;
+  background-color: #fcfc00;
   border-radius: 0px 0px 20px 20px;
 }
 
