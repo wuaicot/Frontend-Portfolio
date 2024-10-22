@@ -9,7 +9,7 @@
   height: 200px !important;
   margin-top: 60px;
   margin-bottom: -120px;
-  margin-left: 300px;
+  margin-left: 140px;
  position: relative;
  display: inline-table;
   border-radius: 5px;
@@ -50,11 +50,14 @@
   }
   
   .description {
+    padding:10px;
     font-size: 18px;
     color: #131142;
     line-height: 1.6;
     margin-bottom: 20px;
-    font-weight: 500;    
+    font-weight: 450px;  
+    justify-content: center;
+    background-color: #fcfc00;  
   }
   
   .aboutcenter {
