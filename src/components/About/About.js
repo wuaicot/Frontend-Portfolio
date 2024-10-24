@@ -86,21 +86,25 @@ const About = () => {
           La comunicación y el trabajo en equipo son esenciales para crecer como desarrollador. Soy proactivo y metódico, siempre buscando nuevos retos y adaptándome fácilmente a los cambios.
           </p>
           <p className={styles.description}>
-           Tecnologías: <li>HTML</li> 
+           <strong className={styles.descriptionuno}><span>Lenguages y Tecnologías que dommino:</span></strong>
+           <span className={styles.fle} role="img" aria-label="flecha abajo">⬇️</span>
+           <div className={styles.elei}><li>HTML</li> 
             <li>CSS</li> 
             <li>JavaScript</li>
-             <li>React JS</li>
+             <li>ReactJS</li>
+             <li>Node JS</li> 
+             <li>TypeScript</li>
               <li>ReactNative</li> 
                <li>Next JS</li>
                 <li>Redux JS</li>
-                 <li>TypeScript</li>
-                  <li>Bootstrap</li>
-                   <li>Node JS</li> 
-                    <li>Express</li> 
-                    <li>SQL</li>
+                 <li>Bootstrap</li>
+                   <li>Express</li> 
+                    <li>SQL Shell</li>
                     <li>Postgre-SQL</li> 
                      <li>JsonWebToken</li>
-                      <li>Git & GitHub</li>
+                      <li>GitBash & GitHub</li></div>
+            <span className={styles.flea} role="img" aria-label="flecha arriba">⬆️</span>
+            
           </p>
           <hr className={styles.aboutcenter} />
           <h2 className={styles.aboutme}>
@@ -163,9 +167,10 @@ const About = () => {
               onClick={handleScrollToTop}
               style={{
                 position: "fixed",
-                bottom: 20,
-                right: 20,
+                bottom: 30,
+                right: 21,
                 zIndex: 1000,  // Asegúrate de que esté por encima de otros elementos
+                
               }}
             >
               <KeyboardArrowUp />

@@ -12,9 +12,15 @@
   margin-left: 130px;
  position: relative;
  display: inline-table;
-  border-radius: 5px;
-  border-style: groove;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 40px;
+  border-style:hidden;
+  
+  filter: contrast(1.1) brightness(1) saturate(1.2) blur(0px);
+  /* Ajuste del borde y nitidez: */
+  image-rendering: -webkit-optimize-contrast; /* mejora para navegadores WebKit */
+  image-rendering: crisp-edges; /* aumenta el enfoque en bordes */
+  
+
 }
 
 
@@ -51,6 +57,7 @@
   
   .description {
     padding:10px;
+    padding-top: 30px;
     font-size: 18px;
     color: #131142;
     line-height: 1.6;
@@ -58,6 +65,32 @@
     font-weight: 450px;  
     justify-content: center;
     
+  }
+
+  .descriptionuno{
+    padding: 0px;
+    padding-bottom: 30px;
+    font-size: 20px;
+    display: block;
+
+  }
+
+  .fle{
+   
+    padding: 30px;
+  }
+  .flea{
+    padding-top: 10px;
+  padding: 30px;
+  }
+
+  .elei{
+    display:block;
+     
+    
+    color: #510467;
+    
+
   }
   
   .aboutcenter {
