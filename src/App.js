@@ -34,7 +34,7 @@ function App() {
             </li>
             <li className="Nav li">
               <NavLink to="/about" className="Nav-link">
-              Acerca De mí
+              Acerca De mi
               </NavLink>
             </li>
             <li className="Nav li">
@@ -44,7 +44,7 @@ function App() {
             </li>
             <li className="Nav li">
               <NavLink to="/contact" className="Nav-link">
-                Contactame
+                Contáctame
               </NavLink>
             </li>
           </ul>

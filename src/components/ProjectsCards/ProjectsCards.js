@@ -32,16 +32,14 @@ const projects = [
     title: 'Soon',
     description: 'Aún en desarrollo.',
     deployedUrl: 'http://www.enespera.com',
-
-  }
-  // Agrega más proyectos si es necesario
+  },
 ];
 
 const ProjectsCards = () => {
   return (
     <div className={styles.container}>
       <div className={styles.adverting}>
-        <h1>Estos son algunos de mis proyectos personales.</h1>
+        <h1>Estos son algunos de mis proyectos personales</h1>
       </div>
       <div className={styles.cardsContainer}>
         {projects.map((project) => (
@@ -59,3 +57,4 @@ const ProjectsCards = () => {
 };
 
 export default ProjectsCards;
+
