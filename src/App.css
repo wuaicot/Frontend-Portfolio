@@ -23,7 +23,7 @@
   top: 0;
   left: 0px;
   width:99%;
-  background-color: #8d0ee2;
+  background-color: #010363;
   min-height: 10vh;
   display: flex;
   flex-direction: column;
@@ -52,7 +52,7 @@
   margin-top: 10vh; 
   background-color: transparent;
   display: inline-block;
-  gap: 33px;
+  gap: 27px;
   align-content: center;
   justify-content: space-around;
   padding: 10px;
