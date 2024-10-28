@@ -1,12 +1,15 @@
 .App {
  
   text-align:center;
+  justify-content: center;
+  align-content: center;
+  
   
   
 }
 
 .App-logo {
-  height:11vmin;
+  height:10vmin;
   pointer-events: none;
   
 }

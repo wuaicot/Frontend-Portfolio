@@ -70,6 +70,7 @@ const Contact = () => {
       <form onSubmit={handleSubmit}>
         <div className={styles.tnc}>
           <label htmlFor="name">tu nombre completo:</label>
+          
           <input
             type="text"
             id="name"
@@ -80,7 +81,7 @@ const Contact = () => {
             required
           />
         </div>
-
+<hr></hr>
         <div className={styles.tem}>
           <label htmlFor="email">tu email:</label>
           <input
@@ -93,6 +94,7 @@ const Contact = () => {
             required
           />
         </div>
+        <hr></hr>
 
         <div className={styles.tmsj}>
           <label htmlFor="message">tu mensaje:</label>
@@ -107,7 +109,7 @@ const Contact = () => {
         </div>
 
         <button className={styles.Enviar} type="submit">Enviar</button>
-        <hr />
+        
         <div className={styles.whatsapp}>
           <HeroSocial
             src={whatsappLogo}

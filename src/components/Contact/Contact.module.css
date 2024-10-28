@@ -34,7 +34,7 @@
   label {
     display: block;
     margin-bottom: 5px;
-    background-color: #4040820c;
+    /* background-color: #4040820c; */
     border-radius: 20px;
   }
 
@@ -53,18 +53,20 @@
   }
 
   .tnc{
-    background-color: #007bff34;
+    /* background-color: #007bff34; */
     display: flex;
+    margin-bottom: 10px;
+
   }
   .tem{
-    background-color: #007bff34;
+    /* background-color: #007bff34; */
     display: flex;
-    margin-top: 4px;
+    margin-top: 10px;
   }
   .tmsj{
-    background-color: #007bff34;
+    /* background-color: #007bff34; */
     display: flex;
-    margin-top: 4px;
+    margin-top: 10px;
   }
   
   /* Estilos para el botón de enviar */
