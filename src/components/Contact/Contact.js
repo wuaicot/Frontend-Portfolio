@@ -101,13 +101,13 @@ const Contact = () => {
             name="message"
             value={formData.message}
             onChange={handleChange}
-            placeholder="📒"
+            placeholder="📒 describe tu idea aquí"
             required
           ></textarea>
         </div>
 
         <button className={styles.Enviar} type="submit">Enviar</button>
-        {/* <hr /> */}
+        <hr />
         <div className={styles.whatsapp}>
           <HeroSocial
             src={whatsappLogo}
