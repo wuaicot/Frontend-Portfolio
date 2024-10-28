@@ -98,7 +98,7 @@ const Home = () => {
       <div className={styles.CVCV}>
         <div className={styles.stackCV}>
           <button className={styles.btndowload} onClick={handleDownloadClick}>
-            Download my CV
+            Descarga mi CV aquí
           </button>
         </div>
       </div>

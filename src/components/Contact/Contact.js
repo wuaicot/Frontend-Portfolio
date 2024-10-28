@@ -68,7 +68,7 @@ const Contact = () => {
       {/* <h3>Contactame</h3> */}
 
       <form onSubmit={handleSubmit}>
-        <div>
+        <div className={styles.tnc}>
           <label htmlFor="name">tu nombre completo:</label>
           <input
             type="text"
@@ -76,25 +76,25 @@ const Contact = () => {
             name="name"
             value={formData.name}
             onChange={handleChange}
-            placeholder="escribe aquí."
+            placeholder=""
             required
           />
         </div>
 
-        <div>
-          <label htmlFor="email">tu email de contacto:</label>
+        <div className={styles.tem}>
+          <label htmlFor="email">tu email:</label>
           <input
             type="email"
             id="email"
             name="email"
             value={formData.email}
             onChange={handleChange}
-            placeholder="te contactaré a este email"
+            placeholder=""
             required
           />
         </div>
 
-        <div>
+        <div className={styles.tmsj}>
           <label htmlFor="message">tu mensaje:</label>
           <textarea 
             id="message"
