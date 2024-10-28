@@ -138,14 +138,14 @@
   }
 
   .whatsapp{
-    margin-top: -16px;
+    margin-top: 0px;
     padding-bottom: 15px;
     display: flex;    
   }
   .gmail{
     display: flex;
     justify-content: flex-end;
-    margin-top: -80px;
+    margin-top: -90px;
     
 
     
