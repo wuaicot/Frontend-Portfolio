@@ -7,6 +7,7 @@
     max-height: auto;
     margin: 11px auto;
     padding: 35px;
+    margin-top: 17px;
     border: 2px solid #e50707;
     border-radius: 20px;
     border-style: groove;
@@ -16,9 +17,11 @@
     background-color: #0057b361;
     border-radius:20px ;
     font-size: larger;
-    padding: 10px 10px 5px 5px;   
+    padding: 0px; 
+    margin-top: -30px; 
     border: 0.9px solid #9a9a9a;   
-    border-style: groove;      
+    border-style: groove;  
+    max-height: 104px;    
   }
   h4{
     color: #01012a;
@@ -131,11 +134,12 @@
   }
 
   .Enviar{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   .whatsapp{
-    margin-top: -16px;    
+    margin-top: -16px;
+    padding-bottom: 15px;
     display: flex;    
   }
   .gmail{

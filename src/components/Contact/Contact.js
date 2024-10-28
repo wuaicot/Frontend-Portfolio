@@ -63,8 +63,9 @@ const Contact = () => {
           Tu idea  <span role="img" aria-label="cara sonriente">😊</span>"
         </h4>
       </div>
+      <br></br>
 
-      <h3>Contactame</h3>
+      {/* <h3>Contactame</h3> */}
 
       <form onSubmit={handleSubmit}>
         <div>
