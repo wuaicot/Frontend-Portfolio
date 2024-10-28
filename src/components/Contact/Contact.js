@@ -60,7 +60,7 @@ const Contact = () => {
       <div className={styles.Estoy}>
         <h4>
           "Estoy listo para comenzar un nuevo proyecto y ayudarte a llevar a cabo
-          Tu idea  <span role="img" aria-label="cara sonriente">😊</span>"
+          Tu idea. Contáctame  <span role="img" aria-label="cara sonriente">😊</span>"
         </h4>
       </div>
       <br></br>
