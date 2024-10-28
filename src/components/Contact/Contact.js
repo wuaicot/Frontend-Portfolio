@@ -105,8 +105,8 @@ const Contact = () => {
           ></textarea>
         </div>
 
-        <button type="submit">Enviar</button>
-        <hr />
+        <button className={styles.Enviar} type="submit">Enviar</button>
+        {/* <hr /> */}
         <div className={styles.whatsapp}>
           <HeroSocial
             src={whatsappLogo}
