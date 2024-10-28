@@ -47,7 +47,7 @@ const ProjectsCards = () => {
             <h2>{project.title}</h2>
             <p>{project.description}</p>
             <a href={project.deployedUrl} target="_blank" rel="noopener noreferrer">
-              See Project
+              Ver Proyecto
             </a>
           </div>
         ))}
