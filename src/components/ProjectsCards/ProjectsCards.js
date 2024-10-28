@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './ProjectsCards.module.css';
 
-// Datos de ejemplo de proyectos (reemplaza con tus datos reales)
+
 const projects = [
   {
     id: 1,
