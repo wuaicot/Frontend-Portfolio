@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react'; // Agrega useState y useEffect aquí
 import styles from './ProjectsCards.module.css';
-
+import { Fab } from "@mui/material";
+import { KeyboardArrowUp } from "@mui/icons-material";
 
 const projects = [
   {
@@ -36,6 +37,25 @@ const projects = [
 ];
 
 const ProjectsCards = () => {
+  const [showScrollTopButton, setShowScrollTopButton] = useState(false);
+
+  const handleScrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 200) {
+        setShowScrollTopButton(true);
+      } else {
+        setShowScrollTopButton(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <div className={styles.container}>
       <div className={styles.adverting}>
@@ -52,9 +72,25 @@ const ProjectsCards = () => {
           </div>
         ))}
       </div>
+
+      {/* Aquí se inserta el botón de desplazamiento hacia arriba */}
+      {showScrollTopButton && (
+        <Fab
+          color="primary"
+          size="medium"
+          onClick={handleScrollToTop}
+          style={{
+            position: "fixed",
+            bottom: 30,
+            right: 21,
+            zIndex: 1000,  // Asegúrate de que esté por encima de otros elementos
+          }}
+        >
+          <KeyboardArrowUp />
+        </Fab>
+      )}
     </div>
   );
 };
 
 export default ProjectsCards;
-
