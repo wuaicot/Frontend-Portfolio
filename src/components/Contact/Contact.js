@@ -48,8 +48,6 @@ const Contact = () => {
         alert(
           "¡Disculpa! En este momento no es posible enviar el mensaje. Puedes contactarme directamente en mi correo electrónico o Whatsapp. ¡Gracias!"
         );
-      } else {
-        console.error("Error en el servidor: ", error); 
       }
     }
   };
