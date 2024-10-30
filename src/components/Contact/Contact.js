@@ -38,21 +38,18 @@ const Contact = () => {
     e.preventDefault();
     try {
       const response = await axios.post("https://backend-portfolio-production-737e.up.railway.app/externed/contact", formData);
-
       console.log('Respuesta del servidor:', response.data); // Asegúrate de que la respuesta se reciba correctamente
       openModal(); // Abre el modal en caso de éxito
       setFormData({ name: "", email: "", message: "" });
     } catch (error) {
       console.error("Error sending message:", error);
-      if (error.response && error.response.status !== 500) {
-        alert(
-          "¡Disculpa! En este momento no es posible enviar el mensaje. Puedes contactarme directamente en mi correo electrónico o Whatsapp. ¡Gracias!"
-        );
-      } else {
-        console.error("Error en el servidor: ", error); // Imprimir el error del servidor en la consola
-      }
+      // Mostrar el alert con el mensaje personalizado en caso de cualquier error
+      alert(
+        "¡Disculpa! En este momento no es posible enviar el mensaje. Puedes contactarme directamente en mi correo electrónico o Whatsapp. ¡Gracias!"
+      );
     }
   };
+  
   
 
   return (
