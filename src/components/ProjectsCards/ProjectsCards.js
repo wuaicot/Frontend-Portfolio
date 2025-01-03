@@ -6,26 +6,26 @@ import { KeyboardArrowUp } from "@mui/icons-material";
 const projects = [
   {
     id: 1,
-    title: 'The Literary Corner',
-    description: 'Un "e-commerce" en el que el usuario, amante de los libros y la literatura, podrá elegir entre cientos de libros con la posibilidad de ver los detalles, añadir a favoritos, hacer reseñas, añadir al carrito de la compra, comprar libros y mucho más',
-    deployedUrl: 'https://pf-henry-bookstore.vercel.app/',
+    title: 'landingpage-templete',
+    description: 'este es un ejemplo de una landing page , con un diseño minimalista y moderno, con un diseño responsivo para dispositivos móviles y de escritorio. Se utilizó ReactJS HTML, CSS y JavaScript para su creación.',
+    deployedUrl: 'https://landingpage-templete.vercel.app/',
   },
   {
     id: 2,
-    title: 'Portal Info-Dogs',
-    description: 'Se trata de una SAP (aplicación de página única) creada con el propósito de obtener información sobre las distintas razas de perros a partir de una API externa. El usuario puede buscar, filtrar, clasificar y crear su raza de perro.',
-    deployedUrl: 'https://portal-info-dogs.vercel.app/',
+    title: 'Scroll Performance Test',
+    description: ' Un ejemplo de una página web con un comodo rendimiento en el desplazamiento scroll. Se utilizó NextJS, TailwindCSS y JavaScript (express) para su creación.',
+    deployedUrl: 'https://new-page-new.vercel.app/',
   },
   {
     id: 3,
-    title: 'Portal Video-Game',
-    description: 'Aquí pronto podrás crear tu colección favorita de videojuegos',
-    deployedUrl: 'https://pi-videogames-main-mi-ihac35zgc-wuaicot.vercel.app/',
+    title: 'Demo Of Menu Toogle',
+    description: 'Este es un ejemplo de un menú hamburguesa con animaciones en modo small, con un diseño minimalista y moderno, con un diseño responsivo para dispositivos móviles y de escritorio. Se utilizó NextJS+Taildwindcss HTML, CSS y JavaScript para su creación.',
+    deployedUrl: 'https://yamil-landingpage.vercel.app/',
   },
   {
     id: 4,
     title: 'Lubridol',
-    description: 'Un producto natural para el dolor en las articulaciones',
+    description: 'Un producto natural para el dolor en las articulaciones. Se utilizó HTML, CSS y JavaScript para su creación.',
     deployedUrl: 'https://lubridol.vercel.app/',
   },
   {
@@ -34,6 +34,25 @@ const projects = [
     description: 'Aún en desarrollo.',
     deployedUrl: 'http://www.enespera.com',
   },
+  {
+    id: 1,
+    title: 'The Literary Corner',
+    description: 'Un "e-commerce" en el que el usuario, amante de los libros y la literatura, podrá elegir entre cientos de libros con la posibilidad de ver los detalles, añadir a favoritos, hacer reseñas, añadir al carrito de la compra, comprar libros y mucho más',
+    deployedUrl: 'https://pf-henry-bookstore.vercel.app/',
+  },
+  {
+    id: 2,
+    title: 'Portal Info-Dogs',
+    description: ' Aquí podrás encontrar información sobre las diferentes razas de perros, con la posibilidad de buscar por nombre, ver detalles de cada raza y mucho más. Se utilizó React, Redux, CSS y JavaScript para su creación.',
+    deployedUrl: 'https://portal-info-dogs.vercel.app/',
+  },
+  
+  {
+    id: 3,
+    title: 'Portal Video-Game',
+    description: 'Un portal en el que podrás encontrar información sobre los videojuegos más populares, con la posibilidad de buscar por nombre, ver detalles de cada videojuego y mucho más. Se utilizó React, Redux, CSS y JavaScript para su creación.',
+    deployedUrl: 'https://pi-videogames-main-mi-ihac35zgc-wuaicot.vercel.app/',
+  }
 ];
 
 const ProjectsCards = () => {
