@@ -22,7 +22,7 @@ const projects = [
   {
     id: 3,
 
-    title: "landingpage-templete",
+    title: "landingpage-templates",
     description:
       "este es un ejemplo de una landing page , con un diseño minimalista y moderno, con un diseño responsivo para dispositivos móviles y de escritorio. Se utilizó ReactJS HTML, CSS y JavaScript para su creación.",
     deployedUrl: "https://landingpage-templete.vercel.app/",
