@@ -29,16 +29,14 @@ const projects = [
   },
   {
     id: 4,
-
-    title: "Scroll Performance Test",
+    title: "Demo-DropShipping",
     description:
-      " Un ejemplo de una página web con un comodo rendimiento en el desplazamiento scroll. Se utilizó NextJS, TailwindCSS y JavaScript (express) para su creación.",
-    deployedUrl: "https://new-page-new.vercel.app/",
+      " Un ejemplo de una app que consume datos de las API¨s PRINTFULL y SNIPCART, CREADA CON NextJS, NpdeJS y Talidwindcss.",
+    deployedUrl: "https://demo-dropshipping.vercel.app/",
   },
   {
     id: 5,
-
-    title: "Demo Of Menu Toogle",
+    title: "Demo Of Menu Toogle (on mivile)",
     description:
       "Este es un ejemplo de un menú hamburguesa con animaciones en modo small, con un diseño minimalista y moderno, con un diseño responsivo para dispositivos móviles y de escritorio. Se utilizó NextJS+Taildwindcss HTML, CSS y JavaScript para su creación.",
     deployedUrl: "https://yamil-landingpage.vercel.app/",
